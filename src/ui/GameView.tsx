@@ -3,7 +3,7 @@ import type { Game, LockResult } from "../engine/game";
 import type { Handling } from "../engine/handling";
 import type { Action } from "../engine/types";
 import { GameLoop } from "../loop";
-import { canvasSize, render, type Overlay } from "../render/renderer";
+import { canvasSize, gameRenderState, render, type Overlay } from "../render/renderer";
 import { codeToAction, type Keybinds } from "./settings";
 
 interface Props {
@@ -16,7 +16,7 @@ interface Props {
   onFrame?: (game: Game) => void;
   onRestart?: (game: Game) => void;
   onForfeit?: () => void;
-  overlay?: () => Overlay;
+  overlay?: (game: Game) => Overlay;
   /** Changing this value restarts the game. */
   resetKey?: unknown;
 }
@@ -46,7 +46,7 @@ export function GameView({ createGame, handling, keybinds, onLock, onFrame, onRe
     const loop = new GameLoop(
       game,
       (g) => {
-        render(ctx, g, latest.current.overlay?.());
+        render(ctx, gameRenderState(g), latest.current.overlay?.(g));
         latest.current.onFrame?.(g);
       },
       (r) => latest.current.onLock?.(r, loop.game),

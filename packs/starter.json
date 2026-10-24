@@ -1,0 +1,60 @@
+{
+  "id": "starter",
+  "title": "Starter TSTs",
+  "goal": "tst",
+  "puzzles": [
+    {
+      "id": "overhang-slide",
+      "name": "Slide under the overhang",
+      "section": "Basics",
+      "board": [
+        "GG........",
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [{ "piece": "T", "x": 1, "y": 0, "rot": "right", "spin": true }],
+      "notes": "Land the T flat on the stack, slide it left under the overhang, then rotate clockwise. The TST kick drops it two rows into the slot."
+    },
+    {
+      "id": "overhang-build",
+      "name": "Build the overhang",
+      "section": "Basics",
+      "board": [
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        { "piece": "O", "x": 0, "y": 4, "rot": "spawn", "spin": false },
+        { "piece": "T", "x": 1, "y": 0, "rot": "right", "spin": true }
+      ],
+      "notes": "Drop the O on the left to make the roof, then slide the T under it and rotate clockwise."
+    },
+    {
+      "id": "iso-tst",
+      "name": "Iso TST",
+      "section": "180° spins",
+      "board": [
+        "GGGGG..GGG",
+        "GGG....GGG",
+        "GGGG.GGGGG",
+        "GGG..GGGGG",
+        "GGGG.GGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [{ "piece": "T", "x": 3, "y": 0, "rot": "left", "spin": true }],
+      "notes": "Rotate counterclockwise, move right twice and soft drop. Then rotate clockwise, 180 (it kicks one cell left), and clockwise again into the TST. Needs SRS+ 180 kicks."
+    }
+  ]
+}

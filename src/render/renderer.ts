@@ -1,6 +1,28 @@
+import type { Board } from "../engine/board";
 import type { Game } from "../engine/game";
 import { pieceCells, SHAPES } from "../engine/pieces";
 import { GARBAGE, cellPiece, type PiecePos, type PieceType } from "../engine/types";
+
+/** Everything the renderer draws; a live Game or a static replay frame. */
+export interface RenderState {
+  board: Board;
+  piece: PiecePos | null;
+  ghost: PiecePos | null;
+  hold: PieceType | null;
+  holdLocked: boolean;
+  next: PieceType[];
+}
+
+export function gameRenderState(game: Game): RenderState {
+  return {
+    board: game.board,
+    piece: game.piece,
+    ghost: game.ghost,
+    hold: game.hold,
+    holdLocked: game.holdLocked,
+    next: game.queue.peek(5),
+  };
+}
 
 /** Original palette (not TETR.IO's). */
 export const PIECE_COLORS: Record<PieceType, string> = {
@@ -27,7 +49,7 @@ export function canvasSize(): { width: number; height: number } {
   return { width: SIDE * 2 + CELL * 10, height: CELL * (20 + BUFFER_ROWS_SHOWN) };
 }
 
-export function render(ctx: CanvasRenderingContext2D, game: Game, overlay: Overlay = {}): void {
+export function render(ctx: CanvasRenderingContext2D, game: RenderState, overlay: Overlay = {}): void {
   const { width, height } = canvasSize();
   const css = getComputedStyle(ctx.canvas);
   const bg = css.getPropertyValue("--board-bg").trim() || "#111318";
@@ -98,7 +120,7 @@ export function render(ctx: CanvasRenderingContext2D, game: Game, overlay: Overl
     mini(ctx, game.hold, 12, top * CELL + 26);
     ctx.globalAlpha = 1;
   }
-  game.queue.peek(5).forEach((t, i) => mini(ctx, t, bx + CELL * 10 + 14, top * CELL + 26 + i * 64));
+  game.next.forEach((t, i) => mini(ctx, t, bx + CELL * 10 + 14, top * CELL + 26 + i * 64));
 }
 
 function mini(ctx: CanvasRenderingContext2D, type: PieceType, x: number, y: number) {
