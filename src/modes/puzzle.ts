@@ -41,20 +41,6 @@ export function pieceStillAvailable(game: Game, type: PieceType): boolean {
 }
 
 /**
- * Hint placements to show: `count` solution steps starting from the next one,
- * assuming the solution has been followed so far.
- */
-export function hintPositions(puzzle: Puzzle, piecesPlaced: number, count: number): PiecePos[] {
-  return puzzle.solution.slice(piecesPlaced, piecesPlaced + count).map(placementToPos);
-}
-
-/** True when the next solution step uses a different piece than the one falling (so hold first). */
-export function hintNeedsHold(puzzle: Puzzle, game: Game): boolean {
-  const step = puzzle.solution[game.stats.pieces];
-  return !!step && !!game.piece && step.piece !== game.piece.type;
-}
-
-/**
  * Frames for the "show full solution" animation: for each step, one frame with
  * the piece hovering in place, then one with it locked and lines cleared.
  */

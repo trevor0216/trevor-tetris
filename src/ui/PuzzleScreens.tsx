@@ -3,10 +3,11 @@ import type { Game } from "../engine/game";
 import { GOALS } from "../modes/goals";
 import { mirrorPuzzle, type LoadedPack, type Pack } from "../modes/packs";
 import type { Progress } from "../modes/progress";
+import type { GoalId } from "../modes/goals";
+import { lockFollowsPlan, lockMatches, nextHintNeedsHold, packPlan, solverRequest, visibleHints, type HintPlan } from "../modes/hints";
+import { solveInWorker } from "../solver/client";
 import {
   createPuzzleGame,
-  hintNeedsHold,
-  hintPositions,
   puzzleStatusAfterLock,
   solutionFrames,
   type PuzzleStatus,
@@ -133,6 +134,12 @@ export function PuzzleView({ pack, index, progress, onNavigate, onBack, onSolved
   const [attempt, setAttempt] = useState(0);
   const [status, setStatus] = useState<PuzzleStatus>({ state: "playing" });
   const [hintCount, setHintCount] = useState(0);
+  const [hintPlan, setHintPlan] = useState<HintPlan | null>(null);
+  const [hintMsg, setHintMsg] = useState<string | null>(null);
+  const gameRef = useRef<Game | null>(null);
+  // Off-script = some lock didn't match the pack solution; hints then come from the solver.
+  const offScript = useRef(false);
+  const hintRequest = useRef(0);
   const [usedHelp, setUsedHelp] = useState(false);
   const [needsHold, setNeedsHold] = useState(false);
   const [demo, setDemo] = useState(false);
@@ -143,7 +150,11 @@ export function PuzzleView({ pack, index, progress, onNavigate, onBack, onSolved
   const resetAttempt = () => {
     setStatus({ state: "playing" });
     setHintCount(0);
+    setHintPlan(null);
+    setHintMsg(null);
     setUsedHelp(false);
+    offScript.current = false;
+    hintRequest.current++;
     setNeedsHold(false);
   };
 
@@ -155,7 +166,36 @@ export function PuzzleView({ pack, index, progress, onNavigate, onBack, onSolved
 
   const restartKey = keyLabel(settings.keybinds.restart.find(Boolean) ?? null);
   const pr = progress[pack.id]?.[base.id] ?? {};
-  const shownHints = Math.min(hintCount, puzzle.solution.length);
+  const shownHints = hintPlan ? Math.min(hintCount, hintPlan.steps.length) : 0;
+  const goal = pack.goal as GoalId;
+
+  const requestHint = () => {
+    setUsedHelp(true);
+    const g = gameRef.current;
+    if (hintPlan && g && g.stats.pieces - hintPlan.base + hintCount < hintPlan.steps.length) {
+      setHintCount((c) => c + 1);
+      return;
+    }
+    if (!g) return;
+    if (!offScript.current) {
+      const plan = packPlan(puzzle, g.stats.pieces);
+      setHintPlan(plan);
+      setHintCount(plan ? 1 : 0);
+      setHintMsg(null);
+      return;
+    }
+    const req = solverRequest(puzzle, goal, g, 400_000);
+    if (!req) return;
+    const id = ++hintRequest.current;
+    setHintMsg("Thinking…");
+    solveInWorker(req).then(({ plan, exhausted }) => {
+      // Ignore answers for a board that has since changed.
+      if (id !== hintRequest.current || gameRef.current?.stats.pieces !== req.base) return;
+      setHintPlan(plan);
+      setHintCount(plan ? 1 : 0);
+      setHintMsg(plan ? null : exhausted ? "No TST is possible from here. Retry to start over." : "Couldn't find a solution in time. Retry to start over.");
+    });
+  };
 
   if (demo) {
     return (
@@ -177,22 +217,34 @@ export function PuzzleView({ pack, index, progress, onNavigate, onBack, onSolved
       <div className="board-wrap">
         <GameView
           resetKey={`${pack.id}/${base.id}/${mirrored}/${attempt}`}
-          createGame={() => createPuzzleGame(puzzle, settings.handling)}
+          createGame={() => (gameRef.current = createPuzzleGame(puzzle, settings.handling))}
           handling={settings.handling}
           keybinds={settings.keybinds}
-          overlay={(g: Game) => ({ hints: shownHints ? hintPositions(puzzle, g.stats.pieces, shownHints) : [] })}
+          overlay={(g: Game) => ({ hints: visibleHints(hintPlan, g.stats.pieces, shownHints) })}
           onFrame={(g) => {
-            const h = shownHints > 0 && hintNeedsHold(puzzle, g);
+            gameRef.current = g;
+            const h = shownHints > 0 && nextHintNeedsHold(hintPlan, g);
             if (h !== needsHold) setNeedsHold(h);
           }}
           onLock={(r, g) => {
             pushToasts(toastsFor(r));
+            if (!lockMatches(puzzle.solution[g.stats.pieces - 1], r)) offScript.current = true;
+            // Going off the hinted line invalidates the plan; the next Hint re-plans.
+            if (hintPlan && !lockFollowsPlan(hintPlan, r, g.stats.pieces)) {
+              setHintPlan(null);
+              setHintCount(0);
+            }
+            hintRequest.current++;
+            setHintMsg(null);
             if (statusRef.current.state !== "playing") return;
-            const st = puzzleStatusAfterLock(pack.goal as keyof typeof GOALS, g, r);
+            const st = puzzleStatusAfterLock(goal, g, r);
             setStatus(st);
             if (st.state === "won") onSolved(base.id, { mirrored, clean: !usedHelp });
           }}
-          onRestart={resetAttempt}
+          onRestart={(g) => {
+            gameRef.current = g;
+            resetAttempt();
+          }}
           onForfeit={onBack}
         />
         <ToastStack toasts={toasts} />
@@ -235,14 +287,8 @@ export function PuzzleView({ pack, index, progress, onNavigate, onBack, onSolved
         </p>
 
         <div className="row wrap">
-          <button
-            onClick={() => {
-              setHintCount((c) => c + 1);
-              setUsedHelp(true);
-            }}
-            disabled={shownHints >= puzzle.solution.length}
-          >
-            {hintCount === 0 ? "Hint" : "Next hint step"}
+          <button onClick={requestHint} disabled={status.state !== "playing"}>
+            {shownHints === 0 ? "Hint" : "Next hint step"}
           </button>
           <button
             onClick={() => {
@@ -256,10 +302,11 @@ export function PuzzleView({ pack, index, progress, onNavigate, onBack, onSolved
         </div>
         {shownHints > 0 && (
           <p className="hint">
-            Showing {shownHints} step{shownHints > 1 ? "s" : ""} as dashed outlines (assumes you've followed the solution so far).
+            Showing {shownHints} step{shownHints > 1 ? "s" : ""} as dashed outlines.
             {needsHold && <strong> Hold first: the next step uses a different piece.</strong>}
           </p>
         )}
+        {hintMsg && <p className="hint">{hintMsg}</p>}
         {base.notes && <p className="notes">{base.notes}</p>}
 
         <label className="toggle">

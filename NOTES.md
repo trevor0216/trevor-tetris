@@ -64,3 +64,11 @@ All values are frames, processed at subframe precision (TRI `#processShift`, `#k
 - **IRS / IHS** (initial rotation/hold) are not implemented.
 - **Finite queues** (puzzles): when the queue is empty and hold has a piece, that piece spawns next. When both are empty the game ends with `queue-empty`.
 - **Lock out** is disabled (TRI presets `nolockout true`). **Clutch clears** are on: after a line clear, a blocked spawn is pushed up instead of topping out.
+
+## Solver (`src/solver`)
+
+- **Placement search**: BFS from the spawn position over shift ±1, rotate CW/CCW/180 (the same `tryRotate` as the engine), one-row fall and sonic drop. Every resting position gets the best spin reachable by a final rotation, plus a shortest input path. Positions covering identical cells (I/S/Z/O rotations) are merged.
+- **Assumption**: gravity is slow enough to stand still in the air (true at TETR.IO's 0.02 G). Lock resets aren't modeled in the search.
+- **Sequence search**: depth-first over the queue, with hold as a choice. It uses iterative deepening, so the shortest (fewest pieces) solution wins, and memoizes failed (board, queue, hold) states. Placements that leave blocks in row 21 or higher are pruned because they'd block the spawn. The node budget bounds run time; `exhausted: false` means "ran out of budget", not "no answer".
+- **Verification** (`verify.ts`): replays each placement's path through the real `Game` with key taps. Gravity is 0, so pieces wait between inputs; a one-row step is a soft drop at SDF 5 and a sonic drop is a soft drop at ∞. It then checks each lock's cells and that only the final lock meets the goal. This exercises the real lock-reset limit, kicks and spin detection.
+- **Speed**: about 50 µs per explored placement. A 5–7 piece queue that has no answer can take seconds to rule out, which is why UI hints use the pack's verified solution while the player is on-script, and the solver (in a Web Worker, 400k-node budget) only after they've gone off-script.
