@@ -1,0 +1,248 @@
+:root {
+  --bg: #0b0c10;
+  --surface: #14161c;
+  --surface-2: #1b1e26;
+  --border: #2a2e39;
+  --text: #e6e6e6;
+  --muted: #8a8f9c;
+  --accent: #a35bd6;
+  --accent-text: #f4ecfb;
+  --warn: #e8913a;
+  --danger: #e0525a;
+  --board-bg: #111318;
+  --board-grid: #1c1f27;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+button {
+  font: inherit;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+button:hover {
+  border-color: var(--muted);
+}
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+button.ghost {
+  background: transparent;
+  border-color: transparent;
+  color: var(--muted);
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand {
+  background: none;
+  border: none;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  font-size: 18px;
+  padding: 0;
+}
+
+.menu {
+  display: grid;
+  gap: 12px;
+  width: min(420px, 100%);
+  margin-top: 8vh;
+}
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 18px 20px;
+  background: var(--surface);
+  text-align: left;
+}
+.menu-item strong {
+  letter-spacing: 0.1em;
+}
+.menu-item span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.board {
+  display: block;
+}
+
+.settings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.tabs {
+  display: flex;
+  gap: 6px;
+}
+.tabs button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+.panel h2 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.row {
+  display: flex;
+  gap: 8px;
+}
+.hint {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 2px 0 0;
+}
+
+.handling {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+.handling > .panel:first-child {
+  flex: 1 1 360px;
+  max-width: 460px;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 48px 1fr 108px;
+  align-items: center;
+  column-gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.slider label {
+  font-weight: 700;
+}
+.slider output {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.slider .hint {
+  grid-column: 1 / -1;
+}
+.slider input {
+  accent-color: var(--accent);
+  width: 100%;
+}
+
+.toggle {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.toggle input {
+  accent-color: var(--accent);
+  margin-top: 3px;
+}
+.toggle small {
+  display: block;
+}
+
+.test-board {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.binds {
+  border-collapse: collapse;
+  width: 100%;
+}
+.binds th {
+  text-align: left;
+  font-weight: 600;
+  padding: 6px 12px 6px 0;
+  white-space: nowrap;
+}
+.binds td {
+  padding: 4px;
+}
+.bind {
+  width: 100%;
+  min-width: 110px;
+  font-variant-numeric: tabular-nums;
+}
+.bind.unset {
+  color: var(--muted);
+  font-size: 12px;
+}
+.bind.listening {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.bind.conflict {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+.warning {
+  margin-top: 12px;
+  color: var(--warn);
+  font-size: 13px;
+  display: grid;
+  gap: 4px;
+}
+
+@media (max-width: 640px) {
+  .slider {
+    grid-template-columns: 40px 1fr 92px;
+  }
+  .bind {
+    min-width: 70px;
+  }
+}
