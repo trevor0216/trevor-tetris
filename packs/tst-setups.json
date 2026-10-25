@@ -1,0 +1,6500 @@
+{
+  "id": "tst-setups",
+  "title": "T-Spin Triple Setups",
+  "source": "https://harddrop.com/wiki/T-Spin_Triple_Setups",
+  "goal": "tst",
+  "puzzles": [
+    {
+      "id": "base-o-1a-complete-with-ij",
+      "name": "O-1A · complete with IJ",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "...GGGGGGG",
+        "OO..GGGGGG",
+        "OO.GGGGGGG"
+      ],
+      "queue": "IJT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 2,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 2,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1A\". Finish the shape with I and J, then T-Spin Triple."
+    },
+    {
+      "id": "base-o-1b-complete-with-l",
+      "name": "O-1B · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "OO.GGGGGGG",
+        "OO..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 0,
+          "y": 3,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1B\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-o-1c-complete-with-o",
+      "name": "O-1C · complete with O",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "OO........",
+        "OO.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 1,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1C\". Finish the shape with the O, then T-Spin Triple."
+    },
+    {
+      "id": "base-o-1d-complete-with-j",
+      "name": "O-1D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "OO........",
+        "OO........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-o-1e-complete-with-l",
+      "name": "O-1E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "OO........",
+        "OO........",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-i-1a-complete-with-il",
+      "name": "I-1A · complete with IL",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".....GGGGG",
+        "IIII..GGGG",
+        "GGGG.GGGGG"
+      ],
+      "queue": "ILT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 2,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "L",
+          "x": 2,
+          "y": 3,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 4,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1A\". Finish the shape with I and L, then T-Spin Triple."
+    },
+    {
+      "id": "base-i-1b-complete-with-l",
+      "name": "I-1B · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "IIII.GGGGG",
+        "GGGG..GGGG",
+        "GGGG.GGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 2,
+          "y": 3,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 4,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1B\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-i-1c-complete-with-i",
+      "name": "I-1C · complete with I",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "IIII......",
+        "GGGG.GGGGG",
+        "GGGG..GGGG",
+        "GGGG.GGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 1,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 4,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1C\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "base-i-1d-complete-with-j",
+      "name": "I-1D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "IIII......",
+        "GGGG......",
+        "GGGG.GGGGG",
+        "GGGG..GGGG",
+        "GGGG.GGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 2,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 4,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-i-1e-complete-with-l",
+      "name": "I-1E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "IIII......",
+        "GGGG......",
+        "GGGG......",
+        "GGGG.GGGGG",
+        "GGGG..GGGG",
+        "GGGG.GGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 3,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 4,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-i-2a-complete-with-j",
+      "name": "I-2A · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "..GGGGGGGG",
+        "I..GGGGGGG",
+        "I.GGGGGGGG",
+        "I.GGGGGGGG",
+        "I.GGGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 0,
+          "y": 4,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 2,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-2A\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-i-2b-complete-with-z",
+      "name": "I-2B · complete with Z",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "I.GGGGGGGG",
+        "I..GGGGGGG",
+        "I.GGGGGGGG",
+        "I.GGGGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "x": 0,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 1,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-2B\". Finish the shape with the Z, then T-Spin Triple."
+    },
+    {
+      "id": "base-i-2c-complete-with-o",
+      "name": "I-2C · complete with O",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "I.........",
+        "I.GGGGGGGG",
+        "I..GGGGGGG",
+        "I.GGGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 0,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-2C\". Finish the shape with the O, then T-Spin Triple."
+    },
+    {
+      "id": "base-i-2d-complete-with-s",
+      "name": "I-2D · complete with S",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "I.........",
+        "I.........",
+        "I.GGGGGGGG",
+        "I..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "x": 0,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-2D\". Finish the shape with the S, then T-Spin Triple."
+    },
+    {
+      "id": "base-i-2e-complete-with-l",
+      "name": "I-2E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "I.........",
+        "I.........",
+        "I.........",
+        "I.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 0,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-2E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-1a-complete-with-io",
+      "name": "J-1A · complete with IO",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "J...GGGGGG",
+        "JJJ..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IOT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 1,
+          "y": 2,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1A\". Finish the shape with I and O, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-1b-complete-with-i",
+      "name": "J-1B · complete with I",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "J.........",
+        "JJJ.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1B\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-1c-complete-with-o",
+      "name": "J-1C · complete with O",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "J.........",
+        "JJJ.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 2,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1C\". Finish the shape with the O, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-1d-complete-with-j",
+      "name": "J-1D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "J.........",
+        "JJJ.......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-1e-complete-with-l",
+      "name": "J-1E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "J.........",
+        "JJJ.......",
+        "GGG.......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 2,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-2a-complete-with-ij",
+      "name": "J-2A · complete with IJ",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "...GGGGGGG",
+        ".J..GGGGGG",
+        ".J.GGGGGGG",
+        "JJ.GGGGGGG"
+      ],
+      "queue": "IJT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 1,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 3,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 1,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2A\". Finish the shape with I and J, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-2b-complete-with-ij",
+      "name": "J-2B · complete with IJ",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".J.GGGGGGG",
+        ".J..GGGGGG",
+        "JJ.GGGGGGG"
+      ],
+      "queue": "IJT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 1,
+          "rot": "left",
+          "spin": true
+        },
+        {
+          "piece": "J",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2B\". Finish the shape with I and J, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-2c-complete-with-io",
+      "name": "J-2C · complete with IO",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".J........",
+        ".J.GGGGGGG",
+        "JJ..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "IOT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 2,
+          "rot": "left",
+          "spin": true
+        },
+        {
+          "piece": "O",
+          "x": 1,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2C\". Finish the shape with I and O, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-2d-complete-with-j",
+      "name": "J-2D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".J........",
+        ".J........",
+        "JJ.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-2e-complete-with-l",
+      "name": "J-2E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".J........",
+        ".J........",
+        "JJ........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-3a-complete-with-ol",
+      "name": "J-3A · complete with OL",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "....GGGGGG",
+        "JJJ..GGGGG",
+        "GGJ.GGGGGG"
+      ],
+      "queue": "OLT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 0,
+          "y": 2,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "O",
+          "x": 2,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3A\". Finish the shape with O and L, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-3b-complete-with-l",
+      "name": "J-3B · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "JJJ.GGGGGG",
+        "GGJ..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 3,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3B\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-3c-complete-with-i",
+      "name": "J-3C · complete with I",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "JJJ.......",
+        "GGJ.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3C\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-3d-complete-with-j",
+      "name": "J-3D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "JJJ.......",
+        "GGJ.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-3e-complete-with-l",
+      "name": "J-3E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "JJJ.......",
+        "GGJ.......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 2,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-j-4a-complete-with-ij",
+      "name": "J-4A · complete with IJ",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "...GGGGGGG",
+        "JJ..GGGGGG",
+        "JG.GGGGGGG",
+        "JG.GGGGGGG"
+      ],
+      "queue": "IJT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 3,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 3,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 1,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-4A\". Finish the shape with I and J, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-1a-complete-with-oj",
+      "name": "L-1A · complete with OJ",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "....GGGGGG",
+        "..L..GGGGG",
+        "LLL.GGGGGG"
+      ],
+      "queue": "OJT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 0,
+          "y": 1,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "J",
+          "x": 2,
+          "y": 2,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1A\". Finish the shape with O and J, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-1b-complete-with-io",
+      "name": "L-1B · complete with IO",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "..L.GGGGGG",
+        "LLL..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IOT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 0,
+          "y": 2,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1B\". Finish the shape with I and O, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-1c-complete-with-i",
+      "name": "L-1C · complete with I",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "..L.......",
+        "LLL.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1C\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-1d-complete-with-j",
+      "name": "L-1D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "..L.......",
+        "LLL.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-1e-complete-with-l",
+      "name": "L-1E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "..L.......",
+        "LLL.......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 2,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-2a-complete-with-j",
+      "name": "L-2A · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "L.........",
+        "L..GGGGGGG",
+        "LL..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 2,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2A\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-2b-complete-with-j",
+      "name": "L-2B · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "L.........",
+        "L.........",
+        "LL.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2B\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-2c-complete-with-o",
+      "name": "L-2C · complete with O",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "L.........",
+        "L.........",
+        "LL........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 1,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2C\". Finish the shape with the O, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-2d-complete-with-s",
+      "name": "L-2D · complete with S",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "L.........",
+        "L.........",
+        "LL........",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "x": 1,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2D\". Finish the shape with the S, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-2e-complete-with-l",
+      "name": "L-2E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "L.........",
+        "L.........",
+        "LL........",
+        "GG........",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-3a-complete-with-ol",
+      "name": "L-3A · complete with OL",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "....GGGGGG",
+        "LLL..GGGGG",
+        "LGG.GGGGGG"
+      ],
+      "queue": "OLT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 0,
+          "y": 2,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "O",
+          "x": 2,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3A\". Finish the shape with O and L, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-3b-complete-with-l",
+      "name": "L-3B · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "LLL.GGGGGG",
+        "LGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 3,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3B\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-3c-complete-with-i",
+      "name": "L-3C · complete with I",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "LLL.......",
+        "LGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3C\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-3d-complete-with-j",
+      "name": "L-3D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "LLL.......",
+        "LGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-3e-complete-with-l",
+      "name": "L-3E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "LLL.......",
+        "LGG.......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 2,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-4a-complete-with-ij",
+      "name": "L-4A · complete with IJ",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "...GGGGGGG",
+        "LL..GGGGGG",
+        "GL.GGGGGGG",
+        "GL.GGGGGGG"
+      ],
+      "queue": "IJT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 3,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 3,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 1,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4A\". Finish the shape with I and J, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-4b-complete-with-l",
+      "name": "L-4B · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "LL.GGGGGGG",
+        "GL..GGGGGG",
+        "GL.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 0,
+          "y": 3,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4B\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-4c-complete-with-o",
+      "name": "L-4C · complete with O",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "LL........",
+        "GL.GGGGGGG",
+        "GL..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 1,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4C\". Finish the shape with the O, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-4d-complete-with-j",
+      "name": "L-4D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "LL........",
+        "GL........",
+        "GL.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-l-4e-complete-with-l",
+      "name": "L-4E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "LL........",
+        "GL........",
+        "GL........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-s-1a-complete-with-j",
+      "name": "S-1A · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "S..GGGGGGG",
+        "SS..GGGGGG",
+        "GS.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 2,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1A\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-s-1b-complete-with-l",
+      "name": "S-1B · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "S.........",
+        "SS.GGGGGGG",
+        "GS..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 0,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1B\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-s-1c-complete-with-o",
+      "name": "S-1C · complete with O",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "S.........",
+        "SS........",
+        "GS.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 1,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1C\". Finish the shape with the O, then T-Spin Triple."
+    },
+    {
+      "id": "base-s-1d-complete-with-s",
+      "name": "S-1D · complete with S",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "S.........",
+        "SS........",
+        "GS........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "x": 1,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1D\". Finish the shape with the S, then T-Spin Triple."
+    },
+    {
+      "id": "base-s-1e-complete-with-l",
+      "name": "S-1E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "S.........",
+        "SS........",
+        "GS........",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-s-2a-complete-with-ls",
+      "name": "S-2A · complete with LS",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "....GGGGGG",
+        ".SS..GGGGG",
+        "SSG.GGGGGG"
+      ],
+      "queue": "LST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "S",
+          "x": 1,
+          "y": 3,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2A\". Finish the shape with L and S, then T-Spin Triple."
+    },
+    {
+      "id": "base-s-2b-complete-with-il",
+      "name": "S-2B · complete with IL",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".SS.GGGGGG",
+        "SSG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "ILT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 2,
+          "rot": "right",
+          "spin": true
+        },
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 3,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2B\". Finish the shape with I and L, then T-Spin Triple."
+    },
+    {
+      "id": "base-s-2c-complete-with-i",
+      "name": "S-2C · complete with I",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".SS.......",
+        "SSG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2C\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "base-s-2d-complete-with-j",
+      "name": "S-2D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".SS.......",
+        "SSG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-s-2e-complete-with-l",
+      "name": "S-2E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".SS.......",
+        "SSG.......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 2,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-z-1a-complete-with-ij",
+      "name": "Z-1A · complete with IJ",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "...GGGGGGG",
+        ".Z..GGGGGG",
+        "ZZ.GGGGGGG",
+        "ZG.GGGGGGG"
+      ],
+      "queue": "IJT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 2,
+          "rot": "left",
+          "spin": true
+        },
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 3,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 1,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1A\". Finish the shape with I and J, then T-Spin Triple."
+    },
+    {
+      "id": "base-z-1b-complete-with-iz",
+      "name": "Z-1B · complete with IZ",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".Z.GGGGGGG",
+        "ZZ..GGGGGG",
+        "ZG.GGGGGGG"
+      ],
+      "queue": "IZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 2,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "Z",
+          "x": 1,
+          "y": 3,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1B\". Finish the shape with I and Z, then T-Spin Triple."
+    },
+    {
+      "id": "base-z-1c-complete-with-o",
+      "name": "Z-1C · complete with O",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".Z........",
+        "ZZ.GGGGGGG",
+        "ZG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 1,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1C\". Finish the shape with the O, then T-Spin Triple."
+    },
+    {
+      "id": "base-z-1d-complete-with-j",
+      "name": "Z-1D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".Z........",
+        "ZZ........",
+        "ZG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-z-1e-complete-with-l",
+      "name": "Z-1E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".Z........",
+        "ZZ........",
+        "ZG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-z-2a-complete-with-j",
+      "name": "Z-2A · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "ZZ..GGGGGG",
+        "GZZ..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 2,
+          "y": 2,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2A\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-z-2b-complete-with-i",
+      "name": "Z-2B · complete with I",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "ZZ........",
+        "GZZ.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2B\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "base-z-2c-complete-with-o",
+      "name": "Z-2C · complete with O",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "ZZ........",
+        "GZZ.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 2,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2C\". Finish the shape with the O, then T-Spin Triple."
+    },
+    {
+      "id": "base-z-2d-complete-with-s",
+      "name": "Z-2D · complete with S",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "ZZ........",
+        "GZZ.......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "x": 2,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2D\". Finish the shape with the S, then T-Spin Triple."
+    },
+    {
+      "id": "base-z-2e-complete-with-l",
+      "name": "Z-2E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "ZZ........",
+        "GZZ.......",
+        "GGG.......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 2,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-1a-complete-with-ij",
+      "name": "T-1A · complete with IJ",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".T..GGGGGG",
+        "TTT..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IJT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 2,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "J",
+          "x": 2,
+          "y": 2,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1A\". Finish the shape with I and J, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-1b-complete-with-i",
+      "name": "T-1B · complete with I",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".T........",
+        "TTT.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1B\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-1c-complete-with-o",
+      "name": "T-1C · complete with O",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".T........",
+        "TTT.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 2,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1C\". Finish the shape with the O, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-1d-complete-with-s",
+      "name": "T-1D · complete with S",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".T........",
+        "TTT.......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "x": 2,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1D\". Finish the shape with the S, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-1e-complete-with-l",
+      "name": "T-1E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".T........",
+        "TTT.......",
+        "GGG.......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 2,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-2a-complete-with-j",
+      "name": "T-2A · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "T..GGGGGGG",
+        "TT..GGGGGG",
+        "TG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 2,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2A\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-2b-complete-with-l",
+      "name": "T-2B · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "T.........",
+        "TT.GGGGGGG",
+        "TG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 0,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2B\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-2c-complete-with-o",
+      "name": "T-2C · complete with O",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "T.........",
+        "TT........",
+        "TG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 1,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2C\". Finish the shape with the O, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-2d-complete-with-s",
+      "name": "T-2D · complete with S",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "T.........",
+        "TT........",
+        "TG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "x": 1,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2D\". Finish the shape with the S, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-2e-complete-with-l",
+      "name": "T-2E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "T.........",
+        "TT........",
+        "TG........",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-3a-complete-with-ol",
+      "name": "T-3A · complete with OL",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "....GGGGGG",
+        "TTT..GGGGG",
+        "GTG.GGGGGG"
+      ],
+      "queue": "OLT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 0,
+          "y": 2,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "O",
+          "x": 2,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3A\". Finish the shape with O and L, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-3b-complete-with-l",
+      "name": "T-3B · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "TTT.GGGGGG",
+        "GTG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 3,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3B\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-3c-complete-with-i",
+      "name": "T-3C · complete with I",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "TTT.......",
+        "GTG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3C\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-3d-complete-with-j",
+      "name": "T-3D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "TTT.......",
+        "GTG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-3e-complete-with-l",
+      "name": "T-3E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "TTT.......",
+        "GTG.......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 2,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-4a-complete-with-ij",
+      "name": "T-4A · complete with IJ",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        "...GGGGGGG",
+        ".T..GGGGGG",
+        "TT.GGGGGGG",
+        "GT.GGGGGGG"
+      ],
+      "queue": "IJT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 2,
+          "rot": "left",
+          "spin": true
+        },
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 3,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 1,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4A\". Finish the shape with I and J, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-4b-complete-with-iz",
+      "name": "T-4B · complete with IZ",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".T.GGGGGGG",
+        "TT..GGGGGG",
+        "GT.GGGGGGG"
+      ],
+      "queue": "IZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 2,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "Z",
+          "x": 1,
+          "y": 3,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4B\". Finish the shape with I and Z, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-4c-complete-with-o",
+      "name": "T-4C · complete with O",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".T........",
+        "TT.GGGGGGG",
+        "GT..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 1,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4C\". Finish the shape with the O, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-4d-complete-with-j",
+      "name": "T-4D · complete with J",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".T........",
+        "TT........",
+        "GT.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 0,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4D\". Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "base-t-4e-complete-with-l",
+      "name": "T-4E · complete with L",
+      "section": "Base / Drop + No Line Clear",
+      "board": [
+        ".T........",
+        "TT........",
+        "GT........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 1,
+          "y": 4,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4E\". Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-o-1",
+      "name": "O-1",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "OO........",
+        "OO........",
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-o-1-build-with-o",
+      "name": "O-1 · build with O",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "rot": "spawn",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1\". Rebuild the setup with the O first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-i-1",
+      "name": "I-1",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "IIII......",
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-i-1-build-with-i",
+      "name": "I-1 · build with I",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "GGG.......",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "spawn",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1\". Rebuild the setup with the I first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-1",
+      "name": "J-1",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "J.........",
+        "JJJ.......",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-1-build-with-j",
+      "name": "J-1 · build with J",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "spawn",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1\". Rebuild the setup with the J first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-2",
+      "name": "J-2",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "JJ........",
+        "J.........",
+        "J.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-2-build-with-j",
+      "name": "J-2 · build with J",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "..GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "right",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2\". Rebuild the setup with the J first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-3",
+      "name": "J-3",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "JJJ.......",
+        "GGJ.......",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-3-build-with-j",
+      "name": "J-3 · build with J",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "GG........",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "reverse",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3\". Rebuild the setup with the J first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-4",
+      "name": "J-4",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        ".J........",
+        ".J........",
+        "JJ........",
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-4\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-4-build-with-j",
+      "name": "J-4 · build with J",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "left",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-4\". Rebuild the setup with the J first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-1",
+      "name": "L-1",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "..L.......",
+        "LLL.......",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-1-build-with-l",
+      "name": "L-1 · build with L",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "spawn",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". Rebuild the setup with the L first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-2",
+      "name": "L-2",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "LL........",
+        "GL........",
+        "GL........",
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-2-build-with-l",
+      "name": "L-2 · build with L",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "G.........",
+        "G.........",
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "left",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2\". Rebuild the setup with the L first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-3",
+      "name": "L-3",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "LLL.......",
+        "LG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-3-build-with-l",
+      "name": "L-3 · build with L",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        ".G........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "reverse",
+          "x": 0,
+          "y": 3,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3\". Rebuild the setup with the L first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-4",
+      "name": "L-4",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "L.........",
+        "L.........",
+        "LL........",
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-4-build-with-l",
+      "name": "L-4 · build with L",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "right",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4\". Rebuild the setup with the L first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-s-1",
+      "name": "S-1",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        ".SS.......",
+        "SS........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-s-1-build-with-s",
+      "name": "S-1 · build with S",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "spawn",
+          "x": 0,
+          "y": 3,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1\". Rebuild the setup with the S first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-s-2",
+      "name": "S-2",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "S.........",
+        "SS........",
+        "GS........",
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-s-2-build-with-s",
+      "name": "S-2 · build with S",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "G.........",
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "right",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2\". Rebuild the setup with the S first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-s-3",
+      "name": "S-3",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        ".SS.......",
+        "SS........",
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-3\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-s-3-build-with-s",
+      "name": "S-3 · build with S",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "spawn",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-3\". Rebuild the setup with the S first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-z-1",
+      "name": "Z-1",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "ZZ........",
+        "GZZ.......",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-z-1-build-with-z",
+      "name": "Z-1 · build with Z",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "G.........",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "spawn",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1\". Rebuild the setup with the Z first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-z-2",
+      "name": "Z-2",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        ".Z........",
+        "ZZ........",
+        "Z.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-z-2-build-with-z",
+      "name": "Z-2 · build with Z",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "right",
+          "x": 0,
+          "y": 3,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2\". Rebuild the setup with the Z first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-1",
+      "name": "T-1",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        ".T........",
+        "TTT.......",
+        "GG........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-2",
+      "name": "T-2",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "T.........",
+        "TT........",
+        "T.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-3",
+      "name": "T-3",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "TTT.......",
+        "GT........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-4",
+      "name": "T-4",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        ".T........",
+        "TT........",
+        "GT........",
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-5",
+      "name": "T-5",
+      "section": "Overhang / Complete Overhang",
+      "board": [
+        "TTT.......",
+        "GT........",
+        "G.........",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-5\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-o-1a-complete-with-i",
+      "name": "O-1A · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "OO..GGGGGG",
+        "OOGGGGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1A\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-o-1b-complete-with-i",
+      "name": "O-1B · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "OOGGGGGGGG",
+        "OO..GGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1B\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-1a-complete-with-i",
+      "name": "J-1A · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "JJJ..GGGGG",
+        "GGJGGGGGGG",
+        "GG...GGGGG",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 5,
+          "y": 6,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1A\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-1b-complete-with-i",
+      "name": "J-1B · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "JJJGGGGGGG",
+        "GGJ..GGGGG",
+        "GG...GGGGG",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 5,
+          "y": 6,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1B\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-2-complete-with-i",
+      "name": "J-2 · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        ".J........",
+        ".J..GGGGGG",
+        "JJGGGGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-1-complete-with-i",
+      "name": "L-1 · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "..L..GGGGG",
+        "LLLGGGGGGG",
+        "GG...GGGGG",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 5,
+          "y": 6,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-2a-complete-with-i",
+      "name": "L-2A · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "LL........",
+        "GL..GGGGGG",
+        "GLGGGGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2A\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-2b-complete-with-i",
+      "name": "L-2B · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "LL........",
+        "GLGGGGGGGG",
+        "GL..GGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2B\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-2c-complete-with-i",
+      "name": "L-2C · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "LLGGGGGGGG",
+        "GL..GGGGGG",
+        "GL..GGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 7,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2C\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-2d-complete-with-i",
+      "name": "L-2D · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "LL........",
+        "GLGGGGGGGG",
+        "GLGGGGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2D\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-2e-complete-with-i",
+      "name": "L-2E · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "LLGGGGGGGG",
+        "GLGGGGGGGG",
+        "GL..GGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 7,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2E\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-2f-complete-with-i",
+      "name": "L-2F · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "LLGGGGGGGG",
+        "GL..GGGGGG",
+        "GLGGGGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 7,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2F\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-s-1a-complete-with-i",
+      "name": "S-1A · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "S.........",
+        "SS..GGGGGG",
+        "GSGGGGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1A\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-s-1b-complete-with-i",
+      "name": "S-1B · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "S.........",
+        "SSGGGGGGGG",
+        "GS..GGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1B\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-z-1-complete-with-i",
+      "name": "Z-1 · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "ZZ..GGGGGG",
+        "GZZGGGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-z-2-complete-with-i",
+      "name": "Z-2 · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        ".Z..GGGGGG",
+        "ZZGGGGGGGG",
+        "Z...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-1-complete-with-i",
+      "name": "T-1 · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        ".T..GGGGGG",
+        "TTTGGGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-2-complete-with-i",
+      "name": "T-2 · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "TTTGGGGGGG",
+        "GT..GGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-3-complete-with-is",
+      "name": "T-3 · complete with IS",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        "TTT..GGGGG",
+        "GTGGGGGGGG",
+        "G....GGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 1,
+          "y": 6,
+          "rot": "left",
+          "spin": true
+        },
+        {
+          "piece": "S",
+          "x": 3,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3\". Finish the shape with I and S, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-4a-complete-with-i",
+      "name": "T-4A · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        ".T........",
+        "TT..GGGGGG",
+        "GTGGGGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4A\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-4b-complete-with-i",
+      "name": "T-4B · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        ".T........",
+        "TTGGGGGGGG",
+        "GT..GGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4B\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-4c-complete-with-i",
+      "name": "T-4C · complete with I",
+      "section": "Overhang / Line Clear Overhang",
+      "board": [
+        ".T........",
+        "TTGGGGGGGG",
+        "GTGGGGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4C\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-i-1a",
+      "name": "I-1A",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "IIII......",
+        "G.........",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1A\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-i-1a-build-with-i",
+      "name": "I-1A · build with I",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "G.........",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "spawn",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1A\". Rebuild the setup with the I first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-i-1b",
+      "name": "I-1B",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "IIII......",
+        "GG........",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1B\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-i-1b-build-with-i",
+      "name": "I-1B · build with I",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "GG........",
+        "GGG.GGGGGG",
+        "GGG..GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "spawn",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1B\". Rebuild the setup with the I first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-1-2",
+      "name": "J-1",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "J.........",
+        "JJJ.......",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-1-build-with-j-2",
+      "name": "J-1 · build with J",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "spawn",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1\". Rebuild the setup with the J first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-2a",
+      "name": "J-2A",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "JJJ.......",
+        "G.J.......",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2A\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-2a-build-with-j",
+      "name": "J-2A · build with J",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "G.........",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "reverse",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2A\". Rebuild the setup with the J first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-2b",
+      "name": "J-2B",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "JJJ.......",
+        "GGJ.......",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2B\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-j-2b-build-with-j",
+      "name": "J-2B · build with J",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "GG........",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "reverse",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2B\". Rebuild the setup with the J first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-1-2",
+      "name": "L-1",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "..L.......",
+        "LLL.......",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-1-build-with-l-2",
+      "name": "L-1 · build with L",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "spawn",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". Rebuild the setup with the L first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-2-2",
+      "name": "L-2",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "LLL.......",
+        "L.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-2-build-with-l-2",
+      "name": "L-2 · build with L",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "reverse",
+          "x": 0,
+          "y": 3,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2\". Rebuild the setup with the L first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-3-2",
+      "name": "L-3",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        ".LL.......",
+        ".GL.......",
+        "GGL.......",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-l-3-build-with-l-2",
+      "name": "L-3 · build with L",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        ".G........",
+        "GG........",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "left",
+          "x": 1,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3\". Rebuild the setup with the L first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-s-1-2",
+      "name": "S-1",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        ".S........",
+        ".SS.......",
+        "GGS.......",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-s-1-build-with-s-2",
+      "name": "S-1 · build with S",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "GG........",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "right",
+          "x": 1,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1\". Rebuild the setup with the S first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-z-2-2",
+      "name": "Z-2",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "ZZ........",
+        "GZZ.......",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-z-2-build-with-z-2",
+      "name": "Z-2 · build with Z",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "G.........",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "spawn",
+          "x": 0,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2\". Rebuild the setup with the Z first, then T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-1-2",
+      "name": "T-1",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        ".T........",
+        "TTT.......",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "overhang-t-2-2",
+      "name": "T-2",
+      "section": "Overhang / Incomplete Overhang",
+      "board": [
+        "..T.......",
+        ".TT.......",
+        "GGT.......",
+        "G.........",
+        "GG.GGGGGGG",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "tsd-funnel-conversion-tsd-funnel-conversion-1",
+      "name": "TSD Funnel Conversion 1",
+      "section": "Situational Setups / Garbage Manipulation / TSD Funnel Conversion",
+      "board": [
+        "...ZZ.....",
+        "....ZZ....",
+        "LLL.GGGGGG",
+        "LS..GGGGGG",
+        "GSS.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "tsd-funnel-conversion-tsd-funnel-conversion-2-build-with-l",
+      "name": "TSD Funnel Conversion 2 · build with L",
+      "section": "Situational Setups / Garbage Manipulation / TSD Funnel Conversion",
+      "board": [
+        "...ZZ.....",
+        "....ZZ....",
+        "....GGGGGG",
+        ".S..GGGGGG",
+        "GSS.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "reverse",
+          "x": 0,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Rebuild the setup with the L first, then T-Spin Triple."
+    },
+    {
+      "id": "tsd-funnel-conversion-tsd-funnel-conversion-3-build-with-zl",
+      "name": "TSD Funnel Conversion 3 · build with ZL",
+      "section": "Situational Setups / Garbage Manipulation / TSD Funnel Conversion",
+      "board": [
+        "....GGGGGG",
+        ".S..GGGGGG",
+        "GSS.GGGGGG"
+      ],
+      "queue": "ZLT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "spawn",
+          "x": 3,
+          "y": 3,
+          "spin": false
+        },
+        {
+          "piece": "L",
+          "rot": "reverse",
+          "x": 0,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Rebuild the setup with Z and L first, then T-Spin Triple."
+    },
+    {
+      "id": "tsd-funnel-conversion-tsd-funnel-conversion-4",
+      "name": "TSD Funnel Conversion 4",
+      "section": "Situational Setups / Garbage Manipulation / TSD Funnel Conversion",
+      "board": [
+        "..ZZ......",
+        "...ZZ.....",
+        "OO.LGGGGGG",
+        "G..LGGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "tsd-funnel-conversion-tsd-funnel-conversion-5-build-with-z",
+      "name": "TSD Funnel Conversion 5 · build with Z",
+      "section": "Situational Setups / Garbage Manipulation / TSD Funnel Conversion",
+      "board": [
+        "OO.LGGGGGG",
+        "G..LGGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "spawn",
+          "x": 2,
+          "y": 3,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Rebuild the setup with the Z first, then T-Spin Triple."
+    },
+    {
+      "id": "tsd-forecast-conversion-forecasting",
+      "name": "Forecasting",
+      "section": "Situational Setups / Garbage Manipulation / TSD Forecast Conversion",
+      "board": [
+        "GG........",
+        "G.........",
+        "G.LLGGGGGG",
+        "G..LGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Forecasting\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "t-spin-combos-tst",
+      "name": "TST",
+      "section": "Situational Setups / Garbage Manipulation / T-Spin combos",
+      "board": [
+        "G.Z......G",
+        "GZZSS..GGG",
+        "GZSS...GGG",
+        "GGGG.GGGGG",
+        "GGGG..GGGG",
+        "GGGG.GGGGG",
+        "GGGGG.GGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 4,
+          "y": 1,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"TST\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "t-spin-combos-tst-build-with-sz",
+      "name": "TST · build with SZ",
+      "section": "Situational Setups / Garbage Manipulation / T-Spin combos",
+      "board": [
+        "G........G",
+        "G......GGG",
+        "G......GGG",
+        "GGGG.GGGGG",
+        "GGGG..GGGG",
+        "GGGG.GGGGG",
+        "GGGGG.GGGG"
+      ],
+      "queue": "SZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "spawn",
+          "x": 2,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "Z",
+          "rot": "right",
+          "x": 1,
+          "y": 4,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 4,
+          "y": 1,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"TST\". Rebuild the setup with S and Z first, then T-Spin Triple."
+    },
+    {
+      "id": "cave-tss-to-tst-cave-tss-to-tst-1",
+      "name": "Cave TSS to TST 1",
+      "section": "Situational Setups / Garbage Manipulation / Cave TSS to TST",
+      "board": [
+        "...GGGGGGG",
+        "....GGGGGG",
+        "LLL.GGGGGG",
+        "LT..GGGGGG",
+        "GTT.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "cave-tss-to-tst-cave-tss-to-tst-2-build-with-l",
+      "name": "Cave TSS to TST 2 · build with L",
+      "section": "Situational Setups / Garbage Manipulation / Cave TSS to TST",
+      "board": [
+        "...GGGGGGG",
+        "....GGGGGG",
+        "....GGGGGG",
+        ".T..GGGGGG",
+        "GTT.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "reverse",
+          "x": 0,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Rebuild the setup with the L first, then T-Spin Triple."
+    },
+    {
+      "id": "cuts-stack-and-create-overhang",
+      "name": "Stack and create overhang.",
+      "section": "Openings / Cuts",
+      "board": [
+        "..GG......",
+        "...GGGGGGG",
+        "ZZ.GGGGGGG",
+        "L..GGGGGGG",
+        "LL.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Stack and create overhang.\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "jt-tl-jt-tl-1",
+      "name": "JT/TL 1",
+      "section": "Openings / JT/TL",
+      "board": [
+        "...GGGGGGG",
+        "....GGGGGG",
+        "TTT.GGGGGG",
+        "JT..GGGGGG",
+        "JJJ.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "jt-tl-jt-tl-2",
+      "name": "JT/TL 2",
+      "section": "Openings / JT/TL",
+      "board": [
+        "...GGGGGGG",
+        "....GGGGGG",
+        "LLL.GGGGGG",
+        "LT..GGGGGG",
+        "TTT.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "jt-tl-jt-tl-3-build-with-l",
+      "name": "JT/TL 3 · build with L",
+      "section": "Openings / JT/TL",
+      "board": [
+        "...GGGGGGG",
+        "....GGGGGG",
+        "....GGGGGG",
+        ".T..GGGGGG",
+        "TTT.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "reverse",
+          "x": 0,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Rebuild the setup with the L first, then T-Spin Triple."
+    },
+    {
+      "id": "jutting-tst-jutting-tst-1",
+      "name": "Jutting TST 1",
+      "section": "Openings / Jutting TST",
+      "board": [
+        "....GGGGGG",
+        ".....GGGGG",
+        "IIII.GGGGG",
+        "SZZ..GGGGG",
+        "SSZZ.GGGGG",
+        ".S...GGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 1,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "jutting-tst-jutting-tst-2-build-with-i",
+      "name": "Jutting TST 2 · build with I",
+      "section": "Openings / Jutting TST",
+      "board": [
+        "....GGGGGG",
+        ".....GGGGG",
+        ".....GGGGG",
+        "SZZ..GGGGG",
+        "SSZZ.GGGGG",
+        ".S...GGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "spawn",
+          "x": 0,
+          "y": 3,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 1,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Rebuild the setup with the I first, then T-Spin Triple."
+    },
+    {
+      "id": "jutting-tst-jutting-tst-3-build-with-zi",
+      "name": "Jutting TST 3 · build with ZI",
+      "section": "Openings / Jutting TST",
+      "board": [
+        "....GGGGGG",
+        ".....GGGGG",
+        ".....GGGGG",
+        "S....GGGGG",
+        "SS...GGGGG",
+        ".S...GGGGG"
+      ],
+      "queue": "ZIT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "spawn",
+          "x": 1,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "I",
+          "rot": "spawn",
+          "x": 0,
+          "y": 3,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 1,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Rebuild the setup with Z and I first, then T-Spin Triple."
+    },
+    {
+      "id": "jutting-tst-jutting-tst-4",
+      "name": "Jutting TST 4",
+      "section": "Openings / Jutting TST",
+      "board": [
+        "....GGGGGG",
+        ".....GGGGG",
+        "IIII.GGGGG",
+        "TZZ..GGGGG",
+        "TTZZ.GGGGG",
+        "T....GGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 1,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "jutting-tst-jutting-tst-5-build-with-i",
+      "name": "Jutting TST 5 · build with I",
+      "section": "Openings / Jutting TST",
+      "board": [
+        "....GGGGGG",
+        ".....GGGGG",
+        ".....GGGGG",
+        "TZZ..GGGGG",
+        "TTZZ.GGGGG",
+        "T....GGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "spawn",
+          "x": 0,
+          "y": 3,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 1,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Rebuild the setup with the I first, then T-Spin Triple."
+    },
+    {
+      "id": "jutting-tst-jutting-tst-6-build-with-zi",
+      "name": "Jutting TST 6 · build with ZI",
+      "section": "Openings / Jutting TST",
+      "board": [
+        "....GGGGGG",
+        ".....GGGGG",
+        ".....GGGGG",
+        "T....GGGGG",
+        "TT...GGGGG",
+        "T....GGGGG"
+      ],
+      "queue": "ZIT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "spawn",
+          "x": 1,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "I",
+          "rot": "spawn",
+          "x": 0,
+          "y": 3,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 1,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Rebuild the setup with Z and I first, then T-Spin Triple."
+    },
+    {
+      "id": "st-transfer-st-transfer-1",
+      "name": "ST Transfer 1",
+      "section": "Openings / ST Transfer",
+      "board": [
+        "..GGGGGGGG",
+        "...GGGGGGG",
+        "JJ.GGGGGGG",
+        "J..GGGGGGG",
+        "JS.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "st-transfer-st-transfer-2-build-with-j",
+      "name": "ST Transfer 2 · build with J",
+      "section": "Openings / ST Transfer",
+      "board": [
+        "..GGGGGGGG",
+        "...GGGGGGG",
+        "...GGGGGGG",
+        "...GGGGGGG",
+        ".S.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "right",
+          "x": 0,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Rebuild the setup with the J first, then T-Spin Triple."
+    },
+    {
+      "id": "tki-s-tsd-morph-tki-s-tsd-morph-1",
+      "name": "TKI's TSD Morph 1",
+      "section": "Openings / TKI's TSD Morph",
+      "board": [
+        "GGG.......",
+        "GG........",
+        "LG.ZZGGGGG",
+        "LG..ZZGGGG",
+        "LL.IIIIGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "other-side-other-side-1",
+      "name": "Other side 1",
+      "section": "Openings / Other side",
+      "board": [
+        "OO........",
+        "OO..GGGGGG",
+        "I...GGGGGG",
+        "I.TTTGZGGJ",
+        "I..TLZZSSJ",
+        "I.LLLZSSJJ"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "iso-t-spin-triple-triso-soft-drop",
+      "name": "Soft drop",
+      "section": "Others TST / Iso T-spin Triple (TrIso)",
+      "board": [
+        "GGGGG..GGG",
+        "GGG....GGG",
+        "GGGG.GGGGG",
+        "GGG..GGGGG",
+        "GGGG.GGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Soft drop\". The slot is ready: put the T in for a T-Spin Triple."
+    },
+    {
+      "id": "notch-1-complete-with-io",
+      "name": "Notch 1 · complete with IO",
+      "section": "Situational Setups / Notch",
+      "board": [
+        "..ZZGGGGGG",
+        "...ZZGGGGG",
+        "..GGGGGGGG"
+      ],
+      "queue": "IOT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 0,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "O",
+          "x": 0,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Finish the shape with I and O, then T-Spin Triple."
+    },
+    {
+      "id": "notch-2-complete-with-io",
+      "name": "Notch 2 · complete with IO",
+      "section": "Situational Setups / Notch",
+      "board": [
+        "..TTTGGGGG",
+        "...TGGGGGG",
+        "..GGGGGGGG"
+      ],
+      "queue": "IOT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 0,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "O",
+          "x": 0,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Finish the shape with I and O, then T-Spin Triple."
+    },
+    {
+      "id": "notch-3-complete-with-io",
+      "name": "Notch 3 · complete with IO",
+      "section": "Situational Setups / Notch",
+      "board": [
+        "..IIIIGGGG",
+        "...GGGGGGG",
+        "..GGGGGGGG"
+      ],
+      "queue": "IOT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 0,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "O",
+          "x": 0,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Finish the shape with I and O, then T-Spin Triple."
+    },
+    {
+      "id": "notch-4-complete-with-io",
+      "name": "Notch 4 · complete with IO",
+      "section": "Situational Setups / Notch",
+      "board": [
+        "..LLGGGGGG",
+        "...LGGGGGG",
+        "..GLGGGGGG"
+      ],
+      "queue": "IOT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 0,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "O",
+          "x": 0,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Finish the shape with I and O, then T-Spin Triple."
+    },
+    {
+      "id": "notch-5-complete-with-io",
+      "name": "Notch 5 · complete with IO",
+      "section": "Situational Setups / Notch",
+      "board": [
+        "..JJJGGGGG",
+        "...GJGGGGG",
+        "..GGGGGGGG"
+      ],
+      "queue": "IOT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 0,
+          "y": 0,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "O",
+          "x": 0,
+          "y": 4,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Finish the shape with I and O, then T-Spin Triple."
+    },
+    {
+      "id": "notch-6-complete-with-ll",
+      "name": "Notch 6 · complete with LL",
+      "section": "Situational Setups / Notch",
+      "board": [
+        "GG...GGGGG",
+        "GG...GGGGG",
+        "GG.G.GGGGG"
+      ],
+      "queue": "LLT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 3,
+          "y": 0,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "L",
+          "x": 0,
+          "y": 3,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Finish the shape with L and L, then T-Spin Triple."
+    },
+    {
+      "id": "notch-7-complete-with-j",
+      "name": "Notch 7 · complete with J",
+      "section": "Situational Setups / Notch",
+      "board": [
+        "GGJJ.GGGGG",
+        "GGJ..GGGGG",
+        "GGJG.GGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "x": 4,
+          "y": 3,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Finish the shape with the J, then T-Spin Triple."
+    },
+    {
+      "id": "notch-8-complete-with-l",
+      "name": "Notch 8 · complete with L",
+      "section": "Situational Setups / Notch",
+      "board": [
+        "GG.LLGGGGG",
+        "GG..LGGGGG",
+        "GG.GLGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 0,
+          "y": 3,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Finish the shape with the L, then T-Spin Triple."
+    },
+    {
+      "id": "cuts-lt-variation-complete-with-i",
+      "name": "LT Variation · complete with I",
+      "section": "Openings / Cuts",
+      "board": [
+        "..GGGGGGGG",
+        "...GGGGGGG",
+        "TTTGGGGGGG",
+        "LT.GGGGGGG",
+        "L..GGGGGGG",
+        "LL.GGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 3,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"LT Variation\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "cuts-sj-variation-complete-with-i",
+      "name": "SJ Variation · complete with I",
+      "section": "Openings / Cuts",
+      "board": [
+        "..GGGGGGGG",
+        "...GGGGGGG",
+        "JJ.GGGGGGG",
+        "J..GGGGGGG",
+        "JSSGGGGGGG",
+        "SS.GGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 3,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"SJ Variation\". Finish the shape with the I, then T-Spin Triple."
+    },
+    {
+      "id": "cuts-tj-variation-complete-with-i",
+      "name": "TJ Variation · complete with I",
+      "section": "Openings / Cuts",
+      "board": [
+        "..GGGGGGGG",
+        "...GGGGGGG",
+        "JJ.GGGGGGG",
+        "J..GGGGGGG",
+        "JT.GGGGGGG",
+        "TTTGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 3,
+          "y": 6,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"TJ Variation\". Finish the shape with the I, then T-Spin Triple."
+    }
+  ]
+}

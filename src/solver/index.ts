@@ -1,7 +1,8 @@
 import { Board } from "../engine/board";
-import { canMoveDown, detectTSpin, tryRotate, tryShift } from "../engine/movement";
-import { pieceCells, spawnPos } from "../engine/pieces";
-import type { PiecePos, PieceType, SpinKind } from "../engine/types";
+import { isTstKick, kicksFor } from "../engine/kicks";
+import { detectTSpin } from "../engine/movement";
+import { SHAPES, pieceCells, rotateBy, spawnPos } from "../engine/pieces";
+import type { PiecePos, PieceType, Rotation, SpinKind } from "../engine/types";
 import { GOALS, type GoalId } from "../modes/goals";
 import { posToPlacement, type Placement } from "../modes/packs";
 
@@ -28,79 +29,115 @@ export interface Reachable {
 
 const SPIN_RANK: Record<SpinKind, number> = { none: 0, mini: 1, full: 2 };
 
-const key = (p: PiecePos) => (p.rot * 64 + (p.x + 8)) * 64 + p.y;
+const MOVES: Move[] = ["left", "right", "cw", "ccw", "180", "down", "sonic"];
+const ROTATIONS: [1 | -1 | 2, number][] = [
+  [1, 2],
+  [-1, 3],
+  [2, 4],
+];
+
+// State index layout: rotation × box x (offset so negative x fits) × box y.
+const X_OFF = 8;
+const X_SPAN = 32;
+const Y_SPAN = 64;
+const N_STATES = 4 * X_SPAN * Y_SPAN;
+const idx = (x: number, y: number, rot: number) => (rot * X_SPAN + x + X_OFF) * Y_SPAN + y;
 
 /** Every resting position reachable for `type` on `board`, each with its best spin and a shortest path. */
 export function reachablePlacements(board: Board, type: PieceType): Reachable[] {
   const start = spawnPos(type, board.width, board.visibleHeight);
   if (!board.fits(start)) return [];
 
-  const parent = new Map<number, { from: number; move: Move } | null>();
-  const states = new Map<number, PiecePos>();
-  // Best spin landing per resting key: reached by a rotation from `from`.
-  const spinLanding = new Map<number, { spin: SpinKind; from: number; move: Move }>();
-
-  const startKey = key(start);
-  parent.set(startKey, null);
-  states.set(startKey, start);
-  const queue: number[] = [startKey];
-
-  const visit = (from: number, to: PiecePos, move: Move) => {
-    const k = key(to);
-    if (!parent.has(k)) {
-      parent.set(k, { from, move });
-      states.set(k, to);
-      queue.push(k);
-    }
+  const shapes = SHAPES[type];
+  const fits = (x: number, y: number, rot: number) => {
+    for (const [cx, cy] of shapes[rot]) if (board.occupied(x + cx, y - cy)) return false;
+    return true;
   };
 
-  for (let i = 0; i < queue.length; i++) {
-    const k = queue[i];
-    const p = states.get(k)!;
-    for (const [dx, move] of [
-      [-1, "left"],
-      [1, "right"],
-    ] as const) {
-      const q = tryShift(board, p, dx);
-      if (q) visit(k, q, move);
-    }
-    for (const [amount, move] of [
-      [1, "cw"],
-      [-1, "ccw"],
-      [2, "180"],
-    ] as const) {
-      const r = tryRotate(board, p, amount);
-      if (!r) continue;
-      visit(k, r.pos, move);
-      if (!canMoveDown(board, r.pos)) {
-        const spin = detectTSpin(board, r.pos, r.tstKick);
-        const rk = key(r.pos);
-        const prev = spinLanding.get(rk);
-        if (spin !== "none" && (!prev || SPIN_RANK[spin] > SPIN_RANK[prev.spin])) {
-          spinLanding.set(rk, { spin, from: k, move });
+  // parent: -2 = unvisited, -1 = start. Spin landings are tracked separately
+  // because the spin depends on the rotation that arrives, not just the state.
+  const parent = new Int32Array(N_STATES).fill(-2);
+  const parentMove = new Int8Array(N_STATES);
+  const spinRank = new Int8Array(N_STATES);
+  const spinFrom = new Int32Array(N_STATES);
+  const spinMove = new Int8Array(N_STATES);
+  const queue = new Int32Array(N_STATES);
+  let head = 0;
+  let tail = 0;
+
+  const startIdx = idx(start.x, start.y, start.rot);
+  parent[startIdx] = -1;
+  queue[tail++] = startIdx;
+
+  while (head < tail) {
+    const s = queue[head++];
+    const y = s % Y_SPAN;
+    const x = (((s / Y_SPAN) | 0) % X_SPAN) - X_OFF;
+    const rot = (s / (Y_SPAN * X_SPAN)) | 0;
+    const visit = (nx: number, ny: number, nrot: number, move: number) => {
+      const k = idx(nx, ny, nrot);
+      if (parent[k] !== -2) return;
+      parent[k] = s;
+      parentMove[k] = move;
+      queue[tail++] = k;
+    };
+
+    if (fits(x - 1, y, rot)) visit(x - 1, y, rot, 0);
+    if (fits(x + 1, y, rot)) visit(x + 1, y, rot, 1);
+
+    for (const [amount, move] of ROTATIONS) {
+      const to = rotateBy(rot as Rotation, amount);
+      let kick: readonly [number, number] | null = fits(x, y, to) ? [0, 0] : null;
+      let kicked = false;
+      if (!kick) {
+        for (const k of kicksFor(type, rot as Rotation, to)) {
+          if (fits(x + k[0], y + k[1], to)) {
+            kick = k;
+            kicked = true;
+            break;
+          }
+        }
+      }
+      if (!kick) continue;
+      const nx = x + kick[0];
+      const ny = y + kick[1];
+      visit(nx, ny, to, move);
+      if (type === "T" && !fits(nx, ny - 1, to)) {
+        const spin = detectTSpin(board, { type, rot: to, x: nx, y: ny }, kicked && isTstKick(rot as Rotation, to, kick));
+        const k = idx(nx, ny, to);
+        if (SPIN_RANK[spin] > spinRank[k]) {
+          spinRank[k] = SPIN_RANK[spin];
+          spinFrom[k] = s;
+          spinMove[k] = move;
         }
       }
     }
-    if (canMoveDown(board, p)) {
-      visit(k, { ...p, y: p.y - 1 }, "down");
-      let d = p;
-      while (canMoveDown(board, d)) d = { ...d, y: d.y - 1 };
-      if (d.y !== p.y - 1) visit(k, d, "sonic");
+
+    if (fits(x, y - 1, rot)) {
+      visit(x, y - 1, rot, 5);
+      let d = y - 1;
+      while (fits(x, d - 1, rot)) d--;
+      if (d !== y - 1) visit(x, d, rot, 6);
     }
   }
 
   const pathTo = (k: number): Move[] => {
     const out: Move[] = [];
-    for (let e = parent.get(k); e; e = parent.get(e.from)) out.push(e.move);
+    for (let e = k; parent[e] !== -1; e = parent[e]) out.push(MOVES[parentMove[e]]);
     return out.reverse();
   };
+  const SPINS: SpinKind[] = ["none", "mini", "full"];
 
   const out: Reachable[] = [];
-  for (const [k, p] of states) {
-    if (canMoveDown(board, p)) continue;
-    const landing = spinLanding.get(k);
-    if (landing) out.push({ pos: p, spin: landing.spin, path: [...pathTo(landing.from), landing.move] });
-    else out.push({ pos: p, spin: "none", path: pathTo(k) });
+  for (let i = 0; i < tail; i++) {
+    const k = queue[i];
+    const y = k % Y_SPAN;
+    const x = (((k / Y_SPAN) | 0) % X_SPAN) - X_OFF;
+    const rot = ((k / (Y_SPAN * X_SPAN)) | 0) as Rotation;
+    if (fits(x, y - 1, rot)) continue;
+    const pos: PiecePos = { type, rot, x, y };
+    if (spinRank[k] > 0) out.push({ pos, spin: SPINS[spinRank[k]], path: [...pathTo(spinFrom[k]), MOVES[spinMove[k]]] });
+    else out.push({ pos, spin: "none", path: pathTo(k) });
   }
   return dedupeByCells(out);
 }
@@ -159,7 +196,7 @@ export function solve(input: SolveInput, maxNodes = 200_000): SolveResult {
     if (depth === 0) return null;
     if (queue.length === 0 && !hold) return null;
     if (need && !queue.includes(need) && !(input.allowHold && hold === need)) return null;
-    const stateKey = `${board.cells.join("")}|${queue.join("")}|${hold ?? "-"}`;
+    const stateKey = `${String.fromCharCode(...board.cells)}|${queue.join("")}|${hold ?? "-"}`;
     if ((failedAtDepth.get(stateKey) ?? 0) >= depth) return null;
 
     // Choices: play the current piece, or hold it and play the held/next piece.

@@ -1,0 +1,27 @@
+{
+  "id": "tst-setups",
+  "title": "T-Spin Triple Setups",
+  "source": "https://harddrop.com/wiki/T-Spin_Triple_Setups",
+  "goal": "tst",
+  "variants": 2,
+  "pages": [
+    {
+      "url": "https://harddrop.com/wiki/T-Spin_Triple_Base_Setups",
+      "section": "Base"
+    },
+    {
+      "url": "https://harddrop.com/wiki/T-Spin_Triple_Overhang_Setups",
+      "section": "Overhang"
+    },
+    {
+      "url": "https://harddrop.com/wiki/T-Spin_Triple_Setups",
+      "include": [
+        "Situational Setups/Notch",
+        "Situational Setups/Garbage Manipulation",
+        "Openings",
+        "Others TST"
+      ],
+      "diagrams": "sequences"
+    }
+  ]
+}
