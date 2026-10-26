@@ -83,6 +83,12 @@ describe("diagram → board", () => {
     expect(diagramToBoard(page.diagrams[2].codes)).toEqual({ ok: false, reason: "shows a line clear in progress" });
   });
 
+  it("reads two-letter block codes (SG, ST) as the same blocks", () => {
+    const r = diagramToBoard([[..."SG SG ST ST ST SG SG SG SG SG".split(" ")]]);
+    expect(r.ok && r.board.rows).toEqual(["GGTTTGGGGG"]);
+    expect(r.ok && r.board.tGroups).toHaveLength(1);
+  });
+
   it("treats ghost cells as empty and rejects unknown codes", () => {
     const r = diagramToBoard([[..."G G G G G G -T -T G G".split(" ")]]);
     expect(r.ok && r.board.rows).toEqual(["GGGGGG..GG"]);
@@ -135,5 +141,25 @@ describe("puzzle generation", () => {
     expect(g.kind).toBe("completion");
     expect(g.queue).toHaveLength(2);
     expect(g.queue.at(-1)).toBe("T");
+  });
+
+  const grid = (rows: string[]) => rows.map((row) => [...row].map((c) => (c === "." ? " " : c)));
+
+  it("drop + line clear: clears the completed row for the ready puzzle, and the variant leaves the clear to the player", () => {
+    const r = diagramToBoard(grid(["OO........", "OOGGGGGGGG", "G...GGGGGG", "GG.GGGGGGG"]));
+    const out = generateFromDiagram(r.ok ? r.board : null!, "tsd", opts);
+    expect(out[0]).toMatchObject({ kind: "pre", queue: "T", rows: ["OO........", "G...GGGGGG", "GG.GGGGGGG"] });
+    expect(out[1]).toMatchObject({ kind: "variant", queue: "OT", rows: ["..GGGGGGGG", "G...GGGGGG", "GG.GGGGGGG"] });
+    const v = out[1];
+    const res = verifyPlacements({ board: v.rows, queue: v.queue, hold: null, allowHold: true }, v.solution, "tsd");
+    expect(res.ok).toBe(true);
+    expect(res.results.map((x) => x.lines)).toEqual([1, 2]);
+  });
+
+  it("goals without a fixed finisher: the last depicted piece becomes the queue (perfect clear)", () => {
+    const r = diagramToBoard(grid(["GGGGGGIIII"]));
+    const [g] = generateFromDiagram(r.ok ? r.board : null!, "pc", opts);
+    expect(g).toMatchObject({ kind: "pre", queue: "I", rows: ["GGGGGG...."] });
+    expect(verifyPlacements({ board: g.rows, queue: g.queue, hold: null, allowHold: true }, g.solution, "pc").results.at(-1)!.perfectClear).toBe(true);
   });
 });

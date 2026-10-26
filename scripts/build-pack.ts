@@ -7,20 +7,32 @@
  *   { id, title, source, goal, variants?: number (default 2), budget?: number,
  *     pages: [{ url, section?: "prefix for section names",
  *               include?: ["Heading/Subheading", ...] (prefix match, default all),
- *               diagrams?: "setups" | "sequences" }] }
+ *               diagrams?: "setups" | "sequences" }
+ *             | { section, boards: [{ name, rows: ["..ZZ......", ...], caption? }] }] }
+ *
+ * `boards` pages are hand-transcribed diagrams (for sites without wiki
+ * templates). Rows are top first, 10 cells: "." empty, G garbage, IJLOSTZ
+ * blocks. They go through the same generation and verification.
  *
  * Writes packs/<id>.json and packs/<id>.report.md, and prints a summary.
  * Every puzzle is solved and replayed through the engine before it's written.
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
-import { isGoalId, type GoalId } from "../src/modes/goals";
+import { GOALS, isGoalId, type GoalId } from "../src/modes/goals";
 import { parsePack, type Pack, type Puzzle } from "../src/modes/packs";
-import { diagramToBoard, fetchWikitext, parseWikitext, type Diagram } from "./lib/harddrop-wiki";
+import { diagramToBoard, fetchWikitext, parseWikitext, type Diagram, type ParsedPage } from "./lib/harddrop-wiki";
 import { generateFromDiagram, type Generated } from "./lib/puzzle-gen";
 
+interface ManualBoard {
+  name: string;
+  rows: string[];
+  caption?: string;
+}
+
 interface PageConfig {
-  url: string;
+  url?: string;
+  boards?: ManualBoard[];
   section?: string;
   include?: string[];
   /**
@@ -59,6 +71,7 @@ if (!isGoalId(config.goal)) {
   process.exit(2);
 }
 const goal: GoalId = config.goal;
+const goalLabel = GOALS[goal].label;
 const variants = config.variants ?? 2;
 const budget = config.budget ?? 30_000;
 const cacheDir = join(root, ".cache", "wiki");
@@ -87,22 +100,22 @@ function uniqueId(base: string): string {
 
 const pieceList = (ps: string[]) => (ps.length === 1 ? `the ${ps[0]}` : `${ps.slice(0, -1).join(", ")} and ${ps.at(-1)}`);
 
-function notesFor(g: Generated, d: Diagram): string {
-  const from = d.caption ? `Hard Drop: "${d.caption}". ` : "";
+function notesFor(g: Generated, d: Diagram, wiki: boolean): string {
+  const from = d.caption ? (wiki ? `Hard Drop: "${d.caption}". ` : `${d.caption} `) : "";
   switch (g.kind) {
     case "pre":
-      return `${from}The slot is ready: put the T in for a T-Spin Triple.`;
+      return `${from}The board is ready: place the ${g.queue} for a ${goalLabel}.`;
     case "variant":
-      return `${from}Rebuild the setup with ${pieceList(g.removed!)} first, then T-Spin Triple.`;
+      return `${from}Rebuild the setup with ${pieceList(g.removed!)} first, then ${goalLabel}.`;
     case "completion":
-      return `${from}Finish the shape with ${pieceList([...g.queue.slice(0, -1)])}, then T-Spin Triple.`;
+      return `${from}Finish the shape with ${pieceList([...g.queue.slice(0, -1)])}, then ${goalLabel}.`;
   }
 }
 
 const unnamedCount = new Map<string, number>();
 
-function nameFor(g: Generated, d: Diagram): string {
-  let label = d.caption && d.caption.length <= 32 ? d.caption : "";
+function nameFor(g: Generated, d: Diagram, wiki: boolean): string {
+  let label = !wiki && d.title ? d.title : d.caption && d.caption.length <= 32 ? d.caption : "";
   if (!label) {
     const base = d.title ?? d.sections.at(-1) ?? "Setup";
     const n = (unnamedCount.get(base) ?? 0) + 1;
@@ -114,9 +127,27 @@ function nameFor(g: Generated, d: Diagram): string {
   return label;
 }
 
+/** Hand-transcribed boards as a parsed page: each board is its own one-step table. */
+function manualPage(boards: ManualBoard[]): ParsedPage {
+  return {
+    images: [],
+    unsupported: [],
+    diagrams: boards.map((b, i) => ({
+      sections: [],
+      title: b.name,
+      table: i,
+      step: 0,
+      caption: b.caption ?? "",
+      codes: b.rows.map((r) => [...r.padEnd(10, ".")].map((c) => (c === "." ? " " : c))),
+      line: i + 1,
+    })),
+  };
+}
+
 for (const page of config.pages) {
-  const { url, text } = await fetchWikitext(page.url, cacheDir);
-  const parsed = parseWikitext(text);
+  const { url, parsed } = page.boards
+    ? { url: page.section ?? "manual boards", parsed: manualPage(page.boards) }
+    : await fetchWikitext(page.url!, cacheDir).then((r) => ({ url: r.url, parsed: parseWikitext(r.text) }));
   const inScope = (sections: string[]) =>
     !page.include || page.include.some((inc) => sections.join("/").toLowerCase().startsWith(inc.toLowerCase()));
 
@@ -127,7 +158,7 @@ for (const page of config.pages) {
 
   const inScopeDiagrams = parsed.diagrams.filter((d) => {
     if (inScope(d.sections)) return true;
-    const k = `${page.url} · ${d.sections.join(" / ") || "(top)"}`;
+    const k = `${url} · ${d.sections.join(" / ") || "(top)"}`;
     outOfScope.set(k, (outOfScope.get(k) ?? 0) + 1);
     return false;
   });
@@ -138,7 +169,7 @@ for (const page of config.pages) {
   for (const d of inScopeDiagrams) lastOfTable.set(d.table, Math.max(lastOfTable.get(d.table) ?? -1, d.step));
 
   const process = (d: Diagram, pass: "direct" | "completion" | "all") => {
-    const section = [page.section, ...d.sections, d.title].filter(Boolean).join(" / ");
+    const section = page.boards ? (page.section ?? config.title) : [page.section, ...d.sections, d.title].filter(Boolean).join(" / ");
     const where = `${section} · ${d.caption || `step ${d.step + 1}`} (line ${d.line})`;
     const isLast = lastOfTable.get(d.table) === d.step;
     const board = diagramToBoard(d.codes);
@@ -153,7 +184,7 @@ for (const page of config.pages) {
       } else if (pass === "completion" && !isLast) {
         counts.buildUp++;
       } else {
-        dropped.push({ where, reason: "no T-Spin Triple even with up to 2 extra pieces" });
+        dropped.push({ where, reason: `no ${goalLabel} even with extra pieces` });
       }
       return;
     }
@@ -164,7 +195,7 @@ for (const page of config.pages) {
         counts.duplicate++;
         continue;
       }
-      const name = nameFor(g, d);
+      const name = nameFor(g, d, !page.boards);
       seen.set(key, name);
       counts[g.kind]++;
       puzzles.push({
@@ -176,7 +207,7 @@ for (const page of config.pages) {
         hold: null,
         allowHold: true,
         solution: g.solution,
-        notes: notesFor(g, d),
+        notes: notesFor(g, d, !page.boards),
       });
     }
   };
@@ -209,9 +240,9 @@ const report = [
   `Generated by \`npm run build-pack -- ${configPath}\`. Every puzzle below was solved and replayed through the engine.`,
   "",
   `- Diagrams in scope: ${counts.diagrams}`,
-  `- Puzzles: ${puzzles.length} (${counts.pre} ready-slot, ${counts.variant} build variants, ${counts.completion} completions)`,
+  `- Puzzles: ${puzzles.length} (${counts.pre} ready, ${counts.variant} build variants, ${counts.completion} completions)`,
   `- Duplicates skipped: ${counts.duplicate}`,
-  `- Build-up steps skipped (intermediate diagrams of a sequence with no TST within 2 extra pieces): ${counts.buildUp}`,
+  `- Build-up steps skipped (intermediate diagrams of a sequence that can't reach the goal with a few extra pieces): ${counts.buildUp}`,
   `- Dropped: ${dropped.length}`,
   `- Image-only diagrams skipped: ${skippedImages.length}`,
   "",

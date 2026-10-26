@@ -123,3 +123,23 @@ describe("verification through the real engine", () => {
     expect(pieceCells(placementToPos({ piece: "T", x: 1, y: 0, rot: "right" }))).toEqual([[1, 2], [1, 1], [2, 1], [1, 0]]);
   });
 });
+
+describe("goals", () => {
+  const TSD_BOARD = ["GG........", "G...GGGGGG", "GG.GGGGGGG"];
+  it("tsd needs a full T-spin clearing exactly two lines", () => {
+    const res = solve({ board: Board.fromRows(TSD_BOARD), queue: ["T"], hold: null, allowHold: true, goal: "tsd" });
+    expect(res.steps).toHaveLength(1);
+    const v = verifyPlacements({ board: TSD_BOARD, queue: "T", hold: null, allowHold: true }, res.steps!.map((s) => s.placement), "tsd");
+    expect(v.results[0]).toMatchObject({ spin: "full", lines: 2 });
+    // The TST board has no TSD with one T: the slot clears three.
+    expect(solve({ board: Board.fromRows(TST_BOARD), queue: ["T"], hold: null, allowHold: true, goal: "tsd" }).steps).toBeNull();
+  });
+
+  it("pc, quad and clearN don't need a T", () => {
+    const board = ["GGGGGGGGG.", "GGGGGGGGG.", "GGGGGGGGG.", "GGGGGGGGG."];
+    for (const goal of ["pc", "quad", "clear3"] as const) {
+      expect(solve({ board: Board.fromRows(board), queue: ["I"], hold: null, allowHold: true, goal }).steps).toHaveLength(1);
+    }
+    expect(solve({ board: Board.fromRows(board), queue: ["O"], hold: null, allowHold: true, goal: "pc" }).steps).toBeNull();
+  });
+});

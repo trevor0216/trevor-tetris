@@ -3,7 +3,7 @@ import { Game, type LockResult } from "../engine/game";
 import type { Handling } from "../engine/handling";
 import { FixedQueue } from "../engine/queue";
 import type { PiecePos, PieceType } from "../engine/types";
-import { GOALS, type GoalId } from "./goals";
+import { GOALS, type Goal, type GoalId } from "./goals";
 import { placementToPos, type Puzzle } from "./packs";
 import type { RenderState } from "../render/renderer";
 
@@ -27,7 +27,7 @@ export function puzzleStatusAfterLock(goal: GoalId, game: Game, r: LockResult): 
   if (GOALS[goal].isMet(r)) return { state: "won" };
   if (game.over === "topout") return { state: "failed", reason: "Topped out." };
   if (game.over === "queue-empty") return { state: "failed", reason: "Out of pieces." };
-  const need = (GOALS[goal] as { requiresPiece?: PieceType }).requiresPiece;
+  const need = (GOALS[goal] as Goal).requiresPiece;
   if (need && !pieceStillAvailable(game, need)) return { state: "failed", reason: `No ${need} piece left.` };
   return { state: "playing" };
 }

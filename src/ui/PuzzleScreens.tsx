@@ -193,7 +193,7 @@ export function PuzzleView({ pack, index, progress, onNavigate, onBack, onSolved
       if (id !== hintRequest.current || gameRef.current?.stats.pieces !== req.base) return;
       setHintPlan(plan);
       setHintCount(plan ? 1 : 0);
-      setHintMsg(plan ? null : exhausted ? "No TST is possible from here. Retry to start over." : "Couldn't find a solution in time. Retry to start over.");
+      setHintMsg(plan ? null : exhausted ? `No ${GOALS[goal].label} is possible from here. Retry to start over.` : "Couldn't find a solution in time. Retry to start over.");
     });
   };
 
@@ -250,7 +250,7 @@ export function PuzzleView({ pack, index, progress, onNavigate, onBack, onSolved
         <ToastStack toasts={toasts} />
         {status.state === "won" && (
           <div className="banner win">
-            T-Spin Triple! Solved.
+            {GOALS[goal].label}! Solved.
             {index + 1 < pack.puzzles.length && (
               <button className="primary" onClick={() => onNavigate(index + 1)}>
                 Next →

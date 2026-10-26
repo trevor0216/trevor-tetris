@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "validate-packs": "vite-node scripts/validate-packs.ts --",
-    "build-pack": "vite-node scripts/build-pack.ts --"
+    "build-pack": "vite-node scripts/build-pack.ts --",
+    "pack-sections": "vite-node scripts/pack-sections.ts --"
   },
   "devDependencies": {
     "@types/node": "^24.19.2",

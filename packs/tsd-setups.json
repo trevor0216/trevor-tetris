@@ -1,0 +1,4606 @@
+{
+  "id": "tsd-setups",
+  "title": "T-Spin Double Setups",
+  "source": "https://harddrop.com/wiki/T-Spin_Double_Setups",
+  "goal": "tsd",
+  "puzzles": [
+    {
+      "id": "base-o-1",
+      "name": "O-1",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...OOGGGGG",
+        "G.GOOGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-o-1-build-with-o",
+      "name": "O-1 · build with O",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.G..GGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "rot": "spawn",
+          "x": 3,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1\". Rebuild the setup with the O first, then T-Spin Double."
+    },
+    {
+      "id": "base-i-1",
+      "name": "I-1",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...IIIIGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-i-1-build-with-i",
+      "name": "I-1 · build with I",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        ".......GGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "spawn",
+          "x": 3,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1\". Rebuild the setup with the I first, then T-Spin Double."
+    },
+    {
+      "id": "base-i-2",
+      "name": "I-2",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...GGGGGGG",
+        "G.IGGGGGGG",
+        "G.IGGGGGGG",
+        "G.IGGGGGGG",
+        "G.IGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 3,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-i-2-build-with-i",
+      "name": "I-2 · build with I",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...GGGGGGG",
+        "G..GGGGGGG",
+        "G..GGGGGGG",
+        "G..GGGGGGG",
+        "G..GGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "right",
+          "x": 2,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 3,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-2\". Rebuild the setup with the I first, then T-Spin Double."
+    },
+    {
+      "id": "base-i-3a",
+      "name": "I-3A",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...IGGGGGG",
+        "G.GIGGGGGG",
+        "G.GIGGGGGG",
+        "G.GIGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 2,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-3A\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-i-3a-build-with-i",
+      "name": "I-3A · build with I",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.G.GGGGGG",
+        "G.G.GGGGGG",
+        "G.G.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "right",
+          "x": 3,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 2,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-3A\". Rebuild the setup with the I first, then T-Spin Double."
+    },
+    {
+      "id": "base-i-3b",
+      "name": "I-3B",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G..I......",
+        "...IGGGGGG",
+        "G.GIGGGGGG",
+        "G.GIGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-3B\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-i-3b-build-with-i",
+      "name": "I-3B · build with I",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.G.GGGGGG",
+        "G.G.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "right",
+          "x": 3,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-3B\". Rebuild the setup with the I first, then T-Spin Double."
+    },
+    {
+      "id": "base-i-3c",
+      "name": "I-3C",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "...I......",
+        "G..I......",
+        "...IGGGGGG",
+        "G.GIGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-3C\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-i-3c-build-with-i",
+      "name": "I-3C · build with I",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.G.GGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "right",
+          "x": 3,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-3C\". Rebuild the setup with the I first, then T-Spin Double."
+    },
+    {
+      "id": "base-i-3d",
+      "name": "I-3D",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "...I......",
+        "...I......",
+        "G..I......",
+        "...IGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-3D\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-i-3d-build-with-i",
+      "name": "I-3D · build with I",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "right",
+          "x": 3,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-3D\". Rebuild the setup with the I first, then T-Spin Double."
+    },
+    {
+      "id": "base-j-1",
+      "name": "J-1",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G..J......",
+        "...JJJGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-j-1-build-with-j",
+      "name": "J-1 · build with J",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "......GGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "spawn",
+          "x": 3,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "base-j-2",
+      "name": "J-2",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G..J......",
+        "...JGGGGGG",
+        "G.JJGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-j-2-build-with-j",
+      "name": "J-2 · build with J",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G...GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "left",
+          "x": 2,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "base-j-3",
+      "name": "J-3",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "....J.....",
+        "G...J.....",
+        "...JJGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-j-3-build-with-j",
+      "name": "J-3 · build with J",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "left",
+          "x": 3,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "base-j-4",
+      "name": "J-4",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...JJJGGGG",
+        "G.GGGJGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-4\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-j-4-build-with-j",
+      "name": "J-4 · build with J",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "......GGGG",
+        "G.GGG.GGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "reverse",
+          "x": 3,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-4\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "base-j-5a",
+      "name": "J-5A",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...JJGGGGG",
+        "G.GJGGGGGG",
+        "G.GJGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-5A\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-j-5a-build-with-j",
+      "name": "J-5A · build with J",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.G.GGGGGG",
+        "G.G.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "right",
+          "x": 3,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-5A\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "base-j-5b",
+      "name": "J-5B",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G..JJ.....",
+        "...JGGGGGG",
+        "G.GJGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-5B\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-j-5b-build-with-j",
+      "name": "J-5B · build with J",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.G.GGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "right",
+          "x": 3,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-5B\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "base-j-5c",
+      "name": "J-5C",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "...JJ.....",
+        "G..JGGGGGG",
+        "...JGGGGGG",
+        "G.GGGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-5C\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-j-5c-build-with-j",
+      "name": "J-5C · build with J",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G...GGGGGG",
+        "....GGGGGG",
+        "G.GGGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "right",
+          "x": 3,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-5C\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "base-l-1",
+      "name": "L-1",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G....L....",
+        "...LLLGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-l-1-build-with-l",
+      "name": "L-1 · build with L",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "......GGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "spawn",
+          "x": 3,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "base-l-2",
+      "name": "L-2",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "...L......",
+        "G..L......",
+        "...LLGGGGG",
+        "G.GGGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-l-2-build-with-l",
+      "name": "L-2 · build with L",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.GGGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "right",
+          "x": 3,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "base-l-3a",
+      "name": "L-3A",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...LLLGGGG",
+        "G.GLGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3A\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-l-3a-build-with-l",
+      "name": "L-3A · build with L",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "......GGGG",
+        "G.G.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "reverse",
+          "x": 3,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3A\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "base-l-3b",
+      "name": "L-3B",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G..LLL....",
+        "...LGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3B\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-l-3b-build-with-l",
+      "name": "L-3B · build with L",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "reverse",
+          "x": 3,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3B\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "base-l-4",
+      "name": "L-4",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...LLGGGGG",
+        "G.GGLGGGGG",
+        "G.GGLGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-l-4-build-with-l",
+      "name": "L-4 · build with L",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.GG.GGGGG",
+        "G.GG.GGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "left",
+          "x": 3,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "base-s-1",
+      "name": "S-1",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...SSGGGGG",
+        "G.SSGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-s-1-build-with-s",
+      "name": "S-1 · build with S",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G...GGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "spawn",
+          "x": 2,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1\". Rebuild the setup with the S first, then T-Spin Double."
+    },
+    {
+      "id": "base-s-2",
+      "name": "S-2",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G...SS....",
+        "...SSGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-s-2-build-with-s",
+      "name": "S-2 · build with S",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "spawn",
+          "x": 3,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2\". Rebuild the setup with the S first, then T-Spin Double."
+    },
+    {
+      "id": "base-s-3",
+      "name": "S-3",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G..S......",
+        "...SSGGGGG",
+        "G.GGSGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-3\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-s-3-build-with-s",
+      "name": "S-3 · build with S",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.GG.GGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "right",
+          "x": 3,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-3\". Rebuild the setup with the S first, then T-Spin Double."
+    },
+    {
+      "id": "base-z-1",
+      "name": "Z-1",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...ZGGGGGG",
+        "G.ZZGGGGGG",
+        "G.ZGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-z-1-build-with-z",
+      "name": "Z-1 · build with Z",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G...GGGGGG",
+        "G..GGGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "right",
+          "x": 2,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1\". Rebuild the setup with the Z first, then T-Spin Double."
+    },
+    {
+      "id": "base-z-2a",
+      "name": "Z-2A",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G...Z.....",
+        "...ZZGGGGG",
+        "G.GZGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2A\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-z-2a-build-with-z",
+      "name": "Z-2A · build with Z",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.G.GGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "right",
+          "x": 3,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2A\". Rebuild the setup with the Z first, then T-Spin Double."
+    },
+    {
+      "id": "base-z-2b",
+      "name": "Z-2B",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "....Z.....",
+        "G..ZZ.....",
+        "...ZGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2B\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-z-2b-build-with-z",
+      "name": "Z-2B · build with Z",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "right",
+          "x": 3,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2B\". Rebuild the setup with the Z first, then T-Spin Double."
+    },
+    {
+      "id": "base-t-1",
+      "name": "T-1",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G...T.....",
+        "...TTTGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-t-2",
+      "name": "T-2",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G..T......",
+        "...TTGGGGG",
+        "G.GTGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-t-3",
+      "name": "T-3",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "...T......",
+        "G..TT.....",
+        "...TGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-t-4",
+      "name": "T-4",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...TTTGGGG",
+        "G.GGTGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-t-5",
+      "name": "T-5",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G.........",
+        "...TGGGGGG",
+        "G.TTGGGGGG",
+        "G.GTGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-5\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-t-6",
+      "name": "T-6",
+      "section": "Base / Drop + No Line Clear / Complete",
+      "board": [
+        "G...T.....",
+        "...TTGGGGG",
+        "G.GGTGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-6\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "base-o-1-complete-with-i",
+      "name": "O-1 · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.OOGGGGGG",
+        "G.OOGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 3,
+          "y": 2,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-i-1-complete-with-l",
+      "name": "I-1 · complete with L",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "......GGGG",
+        "G.IIIIGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "x": 3,
+          "y": 1,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1\". Finish the shape with the L, then T-Spin Double."
+    },
+    {
+      "id": "base-j-1-complete-with-o",
+      "name": "J-1 · complete with O",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.J..GGGGG",
+        "G.JJJGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 3,
+          "y": 1,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1\". Finish the shape with the O, then T-Spin Double."
+    },
+    {
+      "id": "base-j-2-complete-with-o",
+      "name": "J-2 · complete with O",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "...J..GGGG",
+        "G.GJJJGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 4,
+          "y": 1,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2\". Finish the shape with the O, then T-Spin Double."
+    },
+    {
+      "id": "base-j-3-complete-with-o",
+      "name": "J-3 · complete with O",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.JJJGGGGG",
+        "G.GGJGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 3,
+          "y": 2,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3\". Finish the shape with the O, then T-Spin Double."
+    },
+    {
+      "id": "base-j-4-complete-with-i",
+      "name": "J-4 · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.JJGGGGGG",
+        "G.JGGGGGGG",
+        "G.JGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 3,
+          "y": 3,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 2,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-4\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-l-1-complete-with-i",
+      "name": "L-1 · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "....LGGGGG",
+        "G.LLLGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 3,
+          "y": 1,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-l-2-complete-with-i",
+      "name": "L-2 · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.L.GGGGGG",
+        "G.L.GGGGGG",
+        "G.LLGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 3,
+          "y": 1,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 2,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-l-3a-complete-with-i",
+      "name": "L-3A · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "...L.GGGGG",
+        "G.GL.GGGGG",
+        "G.GLLGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 1,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3A\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-l-3b-complete-with-i",
+      "name": "L-3B · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G..L......",
+        "...L.GGGGG",
+        "G.GLLGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 2,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3B\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-l-4-complete-with-o",
+      "name": "L-4 · complete with O",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.LLLGGGGG",
+        "G.LGGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 3,
+          "y": 2,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4\". Finish the shape with the O, then T-Spin Double."
+    },
+    {
+      "id": "base-l-5-complete-with-i",
+      "name": "L-5 · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.LLGGGGGG",
+        "G.GLGGGGGG",
+        "G.GLGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 3,
+          "y": 3,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 2,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-5\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-s-1-complete-with-i",
+      "name": "S-1 · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.S.GGGGGG",
+        "G.SSGGGGGG",
+        "G.GSGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 3,
+          "y": 2,
+          "rot": "right",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 2,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-s-2-complete-with-i",
+      "name": "S-2 · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "...S.GGGGG",
+        "G.GSSGGGGG",
+        "G.GGSGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 2,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-z-1-complete-with-s",
+      "name": "Z-1 · complete with S",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.ZZ.GGGGG",
+        "G.GZZGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "x": 3,
+          "y": 1,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1\". Finish the shape with the S, then T-Spin Double."
+    },
+    {
+      "id": "base-z-2-complete-with-i",
+      "name": "Z-2 · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "...ZZ.GGGG",
+        "G.GGZZGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 5,
+          "y": 1,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-t-1-complete-with-i",
+      "name": "T-1 · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "...T.GGGGG",
+        "G.TTTGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 1,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-t-2-complete-with-i",
+      "name": "T-2 · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "....GGGGGG",
+        "G.T.GGGGGG",
+        "G.TTGGGGGG",
+        "G.TGGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 3,
+          "y": 2,
+          "rot": "right",
+          "spin": true
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 2,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-t-3-complete-with-i",
+      "name": "T-3 · complete with I",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        "...T.GGGGG",
+        "G.GTTGGGGG",
+        "G.GTGGGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 4,
+          "y": 2,
+          "rot": "left",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3\". Finish the shape with the I, then T-Spin Double."
+    },
+    {
+      "id": "base-t-4-complete-with-o",
+      "name": "T-4 · complete with O",
+      "section": "Base / Drop + No Line Clear / Incomplete",
+      "board": [
+        "G.........",
+        ".....GGGGG",
+        "G.TTTGGGGG",
+        "G.GTGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "x": 3,
+          "y": 2,
+          "rot": "spawn",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 1,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4\". Finish the shape with the O, then T-Spin Double."
+    },
+    {
+      "id": "overhang-o-1",
+      "name": "O-1",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "OO........",
+        "OO........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-o-1-build-with-o",
+      "name": "O-1 · build with O",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "rot": "spawn",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1\". Rebuild the setup with the O first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-i-1",
+      "name": "I-1",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "IIII......",
+        "GGG...GGGG",
+        "GGGG.GGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-i-1-build-with-i",
+      "name": "I-1 · build with I",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "GGG...GGGG",
+        "GGGG.GGGGG"
+      ],
+      "queue": "IT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "rot": "spawn",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 3,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"I-1\". Rebuild the setup with the I first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-j-1",
+      "name": "J-1",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "J.........",
+        "JJJ.......",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-j-1-build-with-j",
+      "name": "J-1 · build with J",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "spawn",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-j-2",
+      "name": "J-2",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        ".J........",
+        ".J........",
+        "JJ........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-j-2-build-with-j",
+      "name": "J-2 · build with J",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "left",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-j-3",
+      "name": "J-3",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "JJJ.......",
+        "GGJ.......",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-j-3-build-with-j",
+      "name": "J-3 · build with J",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "GG........",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "reverse",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-j-4",
+      "name": "J-4",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "JJ........",
+        "J...GGGGGG",
+        "JG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-4\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-j-4-build-with-j",
+      "name": "J-4 · build with J",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "....GGGGGG",
+        ".G.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "right",
+          "x": 0,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-4\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-1",
+      "name": "L-1",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "..L.......",
+        "LLL.......",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-l-1-build-with-l",
+      "name": "L-1 · build with L",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "spawn",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-2",
+      "name": "L-2",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "L.........",
+        "L.........",
+        "LL........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-l-2-build-with-l",
+      "name": "L-2 · build with L",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "right",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3",
+      "name": "L-3",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "LLL.......",
+        "LG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3-build-with-l",
+      "name": "L-3 · build with L",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        ".G...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "reverse",
+          "x": 0,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-4",
+      "name": "L-4",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "LL........",
+        "GL........",
+        "GL........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-l-4-build-with-l",
+      "name": "L-4 · build with L",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "G.........",
+        "G.........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "left",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-4\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-s-1",
+      "name": "S-1",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        ".SS.......",
+        "SS...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-s-1-build-with-s",
+      "name": "S-1 · build with S",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        ".....GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "spawn",
+          "x": 0,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1\". Rebuild the setup with the S first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-s-2",
+      "name": "S-2",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "S.........",
+        "SS........",
+        "GS........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-s-2-build-with-s",
+      "name": "S-2 · build with S",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "G.........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "right",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2\". Rebuild the setup with the S first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-z-1",
+      "name": "Z-1",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        ".Z........",
+        "ZZ........",
+        "Z...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-z-1-build-with-z",
+      "name": "Z-1 · build with Z",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "....GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "right",
+          "x": 0,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1\". Rebuild the setup with the Z first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-z-2",
+      "name": "Z-2",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "ZZ........",
+        "GZZ.......",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-z-2-build-with-z",
+      "name": "Z-2 · build with Z",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "G.........",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "spawn",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2\". Rebuild the setup with the Z first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-t-1",
+      "name": "T-1",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        ".T........",
+        "TTT.......",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-t-2",
+      "name": "T-2",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "T.........",
+        "TT........",
+        "T...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-t-3",
+      "name": "T-3",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        "TTT.......",
+        "GT...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-t-4",
+      "name": "T-4",
+      "section": "Overhang / Drop + No Line Clear",
+      "board": [
+        ".T........",
+        "TT........",
+        "GT........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-o-1-2",
+      "name": "O-1",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "OO........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-o-1-build-with-o-2",
+      "name": "O-1 · build with O",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "..GGGGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "OT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "O",
+          "rot": "spawn",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"O-1\". Rebuild the setup with the O first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-j-1-2",
+      "name": "J-1",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".J........",
+        ".J........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-j-1-build-with-j-2",
+      "name": "J-1 · build with J",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "..GGGGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "left",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-1\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-j-2a",
+      "name": "J-2A",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "JJJ.......",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2A\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-j-2a-build-with-j",
+      "name": "J-2A · build with J",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "GG.GGGGGGG",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "reverse",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2A\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-j-2b",
+      "name": "J-2B",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "GGJ..GGGGG",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2B\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-j-2b-build-with-j",
+      "name": "J-2B · build with J",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "...GGGGGGG",
+        "GG...GGGGG",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "reverse",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-2B\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-j-3a",
+      "name": "J-3A",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "JJ........",
+        "J...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3A\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-j-3a-build-with-j",
+      "name": "J-3A · build with J",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "....GGGGGG",
+        ".GGGGGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "right",
+          "x": 0,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3A\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-j-3b-build-with-j",
+      "name": "J-3B · build with J",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".GGGGGGGGG",
+        "....GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "right",
+          "x": 0,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-3B\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-j-4-2",
+      "name": "J-4",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "JJ........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-4\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-j-4-build-with-j-2",
+      "name": "J-4 · build with J",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".GGGGGGGGG",
+        ".GGGGGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "right",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"J-4\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-1-2",
+      "name": "L-1",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "..L.......",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-l-1-build-with-l-2",
+      "name": "L-1 · build with L",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "...GGGGGGG",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "spawn",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-1\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-2-2",
+      "name": "L-2",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "LLL.......",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-l-2-build-with-l-2",
+      "name": "L-2 · build with L",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".GGGGGGGGG",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "reverse",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-2\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3a",
+      "name": "L-3A",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "LL........",
+        "GL........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3A\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3a-build-with-l",
+      "name": "L-3A · build with L",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "G.........",
+        "G.GGGGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "left",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3A\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3b",
+      "name": "L-3B",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "LL........",
+        "GL..GGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3B\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3b-build-with-l",
+      "name": "L-3B · build with L",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "G.GGGGGGGG",
+        "G...GGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "left",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3B\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3c",
+      "name": "L-3C",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "GL..GGGGGG",
+        "GL..GGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3C\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3c-build-with-l",
+      "name": "L-3C · build with L",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "..GGGGGGGG",
+        "G...GGGGGG",
+        "G...GGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "left",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3C\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3d",
+      "name": "L-3D",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "LL........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3D\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3d-build-with-l",
+      "name": "L-3D · build with L",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "G.GGGGGGGG",
+        "G.GGGGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "left",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3D\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3e",
+      "name": "L-3E",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "GL..GGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3E\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3e-build-with-l",
+      "name": "L-3E · build with L",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "..GGGGGGGG",
+        "G.GGGGGGGG",
+        "G...GGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "left",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3E\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-l-3f-build-with-l",
+      "name": "L-3F · build with L",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "..GGGGGGGG",
+        "G...GGGGGG",
+        "G.GGGGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "LT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "L",
+          "rot": "left",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"L-3F\". Rebuild the setup with the L first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-s-1-2",
+      "name": "S-1",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".SS.......",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-s-1-build-with-s-2",
+      "name": "S-1 · build with S",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "..GGGGGGGG",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "spawn",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-1\". Rebuild the setup with the S first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-s-2a",
+      "name": "S-2A",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "S.........",
+        "SS........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2A\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-s-2a-build-with-s",
+      "name": "S-2A · build with S",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "G.GGGGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "right",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2A\". Rebuild the setup with the S first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-s-2b",
+      "name": "S-2B",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "S.........",
+        "GS..GGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2B\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-s-2b-build-with-s",
+      "name": "S-2B · build with S",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "..GGGGGGGG",
+        "G...GGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ST",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "S",
+          "rot": "right",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"S-2B\". Rebuild the setup with the S first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-z-1-2",
+      "name": "Z-1",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "ZZ........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-z-2a",
+      "name": "Z-2A",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".Z........",
+        "ZZ........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2A\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-z-2a-build-with-z",
+      "name": "Z-2A · build with Z",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".GGGGGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "right",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2A\". Rebuild the setup with the Z first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-z-2b",
+      "name": "Z-2B",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".Z........",
+        "Z...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2B\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-z-2b-build-with-z",
+      "name": "Z-2B · build with Z",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "..GGGGGGGG",
+        "....GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "right",
+          "x": 0,
+          "y": 1,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2B\". Rebuild the setup with the Z first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-z-2c",
+      "name": "Z-2C",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".Z........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2C\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-z-2c-build-with-z",
+      "name": "Z-2C · build with Z",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "..GGGGGGGG",
+        ".GGGGGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "ZT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "Z",
+          "rot": "right",
+          "x": 0,
+          "y": 2,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"Z-2C\". Rebuild the setup with the Z first, then T-Spin Double."
+    },
+    {
+      "id": "overhang-t-1-2",
+      "name": "T-1",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".T........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-1\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-t-2-2",
+      "name": "T-2",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "T.........",
+        "TT........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-2\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-t-3a",
+      "name": "T-3A",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "TTT.......",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3A\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-t-3b",
+      "name": "T-3B",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        "GTG..GGGGG",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-3B\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-t-4a",
+      "name": "T-4A",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".T........",
+        "TT........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4A\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "overhang-t-4b",
+      "name": "T-4B",
+      "section": "Overhang / Drop + Line Clear",
+      "board": [
+        ".T........",
+        "GT..GGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"T-4B\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "t-spin-double-t-spin-double-1",
+      "name": "T-Spin Double 1",
+      "section": "General Setups / T-Spin Double",
+      "board": [
+        "GG........",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "kick-t-spin-double-kick-t-spin-double-1",
+      "name": "Kick T-Spin Double 1",
+      "section": "General Setups / Kick T-Spin Double",
+      "board": [
+        "GG..GGGGGG",
+        "G...GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "tst-t-spin-double-tst-t-spin-double-1",
+      "name": "TST T-Spin Double 1",
+      "section": "General Setups / TST T-Spin Double",
+      "board": [
+        "..GG......",
+        "...G......",
+        "GG.GGGGGG.",
+        "G..GGGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "tst-t-spin-double-tst-t-spin-double-2",
+      "name": "TST T-Spin Double 2",
+      "section": "General Setups / TST T-Spin Double",
+      "board": [
+        "..GG......",
+        "...G......",
+        "GG.GGGGGGG",
+        "G..GGGGGG.",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "tst-t-spin-double-tst-t-spin-double-3",
+      "name": "TST T-Spin Double 3",
+      "section": "General Setups / TST T-Spin Double",
+      "board": [
+        "..GG......",
+        "...G......",
+        "GG.GGGGGGG",
+        "G..GGGGGGG",
+        "GG.GGGGGG."
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "stsd-t-spin-double-stsd-t-spin-double-1",
+      "name": "STSD T-Spin Double 1",
+      "section": "General Setups / STSD T-Spin Double",
+      "board": [
+        "..GGG.....",
+        "...GGGGGGG",
+        "GG.GGGGGGG",
+        "G..GGGGGGG",
+        "G..GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "stsd-t-spin-double-stsd-t-spin-double-2",
+      "name": "STSD T-Spin Double 2",
+      "section": "General Setups / STSD T-Spin Double",
+      "board": [
+        "..GGG.....",
+        "...GGGGGGG",
+        "G.TGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "imperial-t-spin-double-imperial-t-spin-double-1",
+      "name": "Imperial T-Spin Double 1",
+      "section": "General Setups / Imperial T-Spin Double",
+      "board": [
+        "...GG.....",
+        "....GGGGGG",
+        "GGG.GGGGGG",
+        "GG...GGGGG",
+        "GGG.GGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "iso-tsd-iso-tsd-1",
+      "name": "Iso-TSD 1",
+      "section": "General Setups / Iso-TSD",
+      "board": [
+        "GGGG......",
+        "G.........",
+        "GG........",
+        "G..GGGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "fin-tsd-fin-tsd-1",
+      "name": "Fin-TSD 1",
+      "section": "General Setups / Fin-TSD",
+      "board": [
+        "GGG.......",
+        "G.........",
+        "G.........",
+        "G..GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "stsd-setup-1",
+      "name": "STSD setup 1",
+      "section": "STSD setup",
+      "board": [
+        "..OOGGGGGG",
+        "...IGGGGGG",
+        "JJ.IGGGGGG",
+        "J..IGGGGGG",
+        "J..IGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"You can use a T, and slide it under the over hang and rotate;\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "stsd-setup-2-build-with-j",
+      "name": "STSD setup 2 · build with J",
+      "section": "STSD setup",
+      "board": [
+        "..OOGGGGGG",
+        "...IGGGGGG",
+        "...IGGGGGG",
+        "...IGGGGGG",
+        "...IGGGGGG"
+      ],
+      "queue": "JT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "J",
+          "rot": "right",
+          "x": 0,
+          "y": 0,
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 1,
+          "y": 0,
+          "rot": "left",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"You can use a T, and slide it under the over hang and rotate;\". Rebuild the setup with the J first, then T-Spin Double."
+    },
+    {
+      "id": "stsd-setup-3",
+      "name": "STSD setup 3",
+      "section": "STSD setup",
+      "board": [
+        "..GGGGGGGG",
+        "...GGGGGGG",
+        "G.TGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "Hard Drop: \"That will make a TSD, and make a slot for another.\". The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "stsd-setup-4",
+      "name": "STSD setup 4",
+      "section": "STSD setup",
+      "board": [
+        "..GGGGGGGG",
+        "...GGGGGGG",
+        "G.GGGGGGGG"
+      ],
+      "queue": "T",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "T",
+          "x": 0,
+          "y": 0,
+          "rot": "reverse",
+          "spin": true
+        }
+      ],
+      "notes": "The board is ready: place the T for a T-Spin Double."
+    },
+    {
+      "id": "neo-tsd-neo-tsd-1-complete-with-ij",
+      "name": "Neo-TSD 1 · complete with IJ",
+      "section": "General Setups / Neo-TSD",
+      "board": [
+        "GGG.......",
+        "G.........",
+        "GG..GGGGG.",
+        "GG..GGGGGG",
+        "GG.GGGGGGG"
+      ],
+      "queue": "IJT",
+      "hold": null,
+      "allowHold": true,
+      "solution": [
+        {
+          "piece": "I",
+          "x": 6,
+          "y": 3,
+          "rot": "right",
+          "spin": false
+        },
+        {
+          "piece": "J",
+          "x": 1,
+          "y": 4,
+          "rot": "reverse",
+          "spin": false
+        },
+        {
+          "piece": "T",
+          "x": 2,
+          "y": 0,
+          "rot": "right",
+          "spin": true
+        }
+      ],
+      "notes": "Finish the shape with I and J, then T-Spin Double."
+    }
+  ]
+}

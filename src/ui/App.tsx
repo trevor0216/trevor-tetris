@@ -50,7 +50,7 @@ export function App() {
         <nav className="menu">
           <button className="menu-item" onClick={() => setScreen({ name: "packs" })}>
             <strong>PUZZLES</strong>
-            <span>Drill T-Spin Triple setups with fixed queues</span>
+            <span>Drill T-spin setups with fixed queues</span>
           </button>
           <button className="menu-item" onClick={() => setScreen({ name: "freeplay" })}>
             <strong>FREE PLAY</strong>

@@ -12,7 +12,7 @@
 import { Board } from "../../src/engine/board";
 import { pieceCells } from "../../src/engine/pieces";
 import type { PieceType } from "../../src/engine/types";
-import { GOALS, type GoalId } from "../../src/modes/goals";
+import { GOALS, type Goal, type GoalId } from "../../src/modes/goals";
 import { ROT_NAMES, placementToPos, type Placement } from "../../src/modes/packs";
 import { solve } from "../../src/solver";
 import { verifyPlacements } from "../../src/solver/verify";
@@ -30,11 +30,14 @@ export interface Generated {
 const EXTRA_PIECES: PieceType[] = ["I", "O", "L", "J", "S", "Z", "T"];
 const cellKey = (cells: [number, number][]) => cells.map(([x, y]) => `${x},${y}`).sort().join(";");
 
-function finisherOf(goal: GoalId): PieceType {
-  const need = (GOALS[goal] as { requiresPiece?: PieceType }).requiresPiece;
-  if (!need) throw new Error(`goal ${goal} has no finisher piece; generation needs one`);
-  return need;
+/** The piece every solution must end on, if the goal fixes one (T for T-spin goals). */
+function finisherOf(goal: GoalId): PieceType | null {
+  return (GOALS[goal] as Goal).requiresPiece ?? null;
 }
+
+const hasFullRow = (rows: string[]) => rows.some((r) => !r.includes("."));
+/** Clears full rows, as the engine would after the depicted piece locked ("drop + line clear" diagrams). */
+const clearFull = (rows: string[]) => trimTop(rows.filter((r) => r.includes(".")));
 
 function trySolve(rows: string[], queue: PieceType[], goal: GoalId, budget: number): Placement[] | null {
   const res = solve({ board: Board.fromRows(rows), queue, hold: null, allowHold: true, goal }, budget);
@@ -107,39 +110,67 @@ export function generateFromDiagram(
   goal: GoalId,
   opts: { variants: number; budget: number; completion: boolean },
 ): Generated[] {
-  const finisher = finisherOf(goal);
+  const fixed = finisherOf(goal);
+  const lastPieces = fixed ? [fixed] : EXTRA_PIECES;
   const out: Generated[] = [];
 
-  // 1. Pre-goal board: as drawn, or minus a depicted finisher piece (prefer the
-  //    one the solution then lands exactly on).
-  const candidates: { rows: string[]; removedCells?: [number, number][] }[] = [{ rows: d.rows }];
-  for (const g of d.tGroups) if (asPiece(finisher, g)) candidates.push({ rows: withCells(d.rows, g, "."), removedCells: g });
+  // 1. Pre-goal board: as drawn, or minus a depicted finishing piece (prefer the
+  //    one the solution then lands exactly on). With no fixed finisher (pc,
+  //    clear-N) any depicted piece may be the last one, and any piece may finish.
+  const depicted: { piece: PieceType; cells: [number, number][] }[] = [];
+  if (fixed) {
+    for (const g of d.tGroups) if (asPiece(fixed, g)) depicted.push({ piece: fixed, cells: g });
+  } else {
+    for (const [letter, cells] of [...d.upper, ["T", d.tGroups.flat()] as const]) {
+      for (const comp of components([...cells])) if (asPiece(letter as PieceType, comp)) depicted.push({ piece: letter as PieceType, cells: comp });
+    }
+    // Topmost first: the last piece placed is usually on top.
+    depicted.sort((a, b) => Math.max(...b.cells.map(([, y]) => y)) - Math.max(...a.cells.map(([, y]) => y)));
+  }
+  const candidates: { rows: string[]; queue: PieceType[]; removedCells?: [number, number][] }[] = [];
+  // A diagram with a full row shows a piece that just completed it: the board
+  // the player faces is the one after that clear.
+  const drawnFull = hasFullRow(d.rows);
+  for (const p of lastPieces) candidates.push({ rows: clearFull(d.rows), queue: [p] });
+  for (const dp of depicted) {
+    const rows = withCells(d.rows, dp.cells, ".");
+    // Removed-cell matching needs the drawing's coordinates, so skip when a clear would shift them.
+    if (!hasFullRow(rows)) candidates.push({ rows, queue: [dp.piece], removedCells: dp.cells });
+  }
   let pre: Generated | null = null;
   for (const c of candidates) {
-    const sol = trySolve(c.rows, [finisher], goal, opts.budget);
+    if (pre && !c.removedCells) continue;
+    const sol = trySolve(c.rows, c.queue, goal, opts.budget);
     if (!sol) continue;
-    const g: Generated = { kind: "pre", rows: c.rows, queue: finisher, solution: sol };
+    const g: Generated = { kind: "pre", rows: c.rows, queue: c.queue.join(""), solution: sol };
     const exact = c.removedCells && cellKey(pieceCells(placementToPos(sol[0]))) === cellKey(c.removedCells);
     if (!pre || exact) pre = g;
-    if (exact || !c.removedCells) break;
+    if (exact || (!c.removedCells && fixed)) break;
   }
 
   if (!pre) {
     if (!opts.completion) return [];
     // 2. Completion: shortest extra queue (1 then 2 pieces) that makes the goal
-    //    possible. With hold, [a, b, T] also covers b-before-a, so pairs are unordered.
-    for (const len of [1, 2]) {
+    //    possible. With hold, [a, b, T] also covers b-before-a, so pairs are
+    //    unordered. Without a fixed finisher only 1 extra piece is tried (the
+    //    search space is 7x larger).
+    for (const len of fixed ? [1, 2] : [1]) {
       const queues: PieceType[][] =
         len === 1 ? EXTRA_PIECES.map((p) => [p]) : EXTRA_PIECES.flatMap((a, i) => EXTRA_PIECES.slice(i).map((b) => [a, b]));
       for (const extra of queues) {
-        const q = [...extra, finisher];
-        const sol = trySolve(d.rows, q, goal, opts.budget);
-        if (sol) return [{ kind: "completion", rows: d.rows, queue: q.join(""), solution: sol }];
+        for (const last of lastPieces) {
+          const q = [...extra, last];
+          const rows = clearFull(d.rows);
+          const sol = trySolve(rows, q, goal, opts.budget);
+          if (sol) return [{ kind: "completion", rows, queue: q.join(""), solution: sol }];
+        }
       }
     }
     return [];
   }
   out.push(pre);
+  const finisher = pre.solution.at(-1)!.piece;
+  const finisherCells = cellKey(pieceCells(placementToPos(pre.solution.at(-1)!)));
 
   // 3. Variants: take out setup pieces nearest the goal placement, topmost first.
   const target = pieceCells(placementToPos(pre.solution.at(-1)!));
@@ -147,7 +178,7 @@ export function generateFromDiagram(
   for (const [letter, cells] of d.upper) {
     for (const comp of components(cells)) {
       const pl = asPiece(letter as PieceType, comp);
-      if (pl) pieces.push(pl);
+      if (pl && cellKey(comp) !== finisherCells) pieces.push(pl);
     }
   }
   const dist = (pl: Placement) => {
@@ -163,7 +194,10 @@ export function generateFromDiagram(
     });
   };
 
-  let rows = pre.rows;
+  // Drop + line clear: take pieces out of the drawing itself, so the player's
+  // drop does the clear (the finisher's placement is in post-clear rows, which
+  // is where the engine puts it after that clear).
+  let rows = drawnFull ? d.rows : pre.rows;
   const removed: Placement[] = [];
   for (let n = 0; n < opts.variants; n++) {
     const next = pieces
@@ -175,6 +209,7 @@ export function generateFromDiagram(
     // Placement order is the reverse of removal; the finisher goes last.
     const buildOrder = [...removed].reverse();
     const queue = [...buildOrder.map((p) => p.piece), finisher];
+    if (hasFullRow(rows)) continue; // the clearing piece is still on the board
     if (trySolve(rows, [finisher], goal, opts.budget)) continue; // still solvable without building: not a real variant
     // Prefer the wiki's own placements; fall back to whatever the solver finds.
     const original = [...buildOrder, pre.solution.at(-1)!];

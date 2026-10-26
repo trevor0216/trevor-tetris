@@ -1,0 +1,22 @@
+{
+  "id": "tsd-setups",
+  "title": "T-Spin Double Setups",
+  "source": "https://harddrop.com/wiki/T-Spin_Double_Setups",
+  "goal": "tsd",
+  "variants": 2,
+  "pages": [
+    {
+      "url": "https://harddrop.com/wiki/T-Spin_Double_Base_Setups",
+      "section": "Base"
+    },
+    {
+      "url": "https://harddrop.com/wiki/T-Spin_Double_Overhang_Setups",
+      "section": "Overhang"
+    },
+    {
+      "url": "https://harddrop.com/wiki/T-Spin_Double_Setups",
+      "include": ["General Setups", "STSD setup"],
+      "diagrams": "sequences"
+    }
+  ]
+}

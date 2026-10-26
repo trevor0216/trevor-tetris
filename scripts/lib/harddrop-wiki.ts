@@ -6,7 +6,8 @@
  * images. Cell codes (Template:Pfstart legend): space = empty, IJLOSTZ =
  * piece colors, G = garbage, P = purple T for T-spin docs, "-" = ghost piece
  * or line clear, C/B/X/digits = annotations. Lowercase letters are lighter
- * shades of the same blocks; "-T" etc. are ghost pieces.
+ * shades of the same blocks; "-T" etc. are ghost pieces. Some pages use
+ * two-letter codes ("SG", "ST", ...) for the same blocks in another style.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -159,9 +160,10 @@ export function diagramToBoard(codes: string[][]): DiagramResult {
   const grid: string[][] = codes.map((row) =>
     row.map((c) => {
       if (c === " " || c.startsWith("-") || c === "X" || /^[0-9]$/.test(c)) return ".";
-      if (c === "G" || c === "g" || c === "B") return "G";
+      if (c === "G" || c === "g" || c === "B" || c === "SG") return "G";
       if (c === "P" || c === "p") return "T";
-      const letter = c.replace(/^'/, "").toUpperCase();
+      // "SG", "ST", ...: another block style used on some pages, same block.
+      const letter = c.replace(/^'/, "").replace(/^S(?=[GIJLOSTZ]$)/, "").toUpperCase();
       if (/^[IJLOSTZ]$/.test(letter)) return letter;
       if (letter === "C") return "G";
       return "?";
@@ -178,7 +180,7 @@ export function diagramToBoard(codes: string[][]): DiagramResult {
   if (rows.length > 20) return { ok: false, reason: `stack is ${rows.length} rows tall` };
 
   const yOf = (rowIndex: number) => height - 1 - rowIndex;
-  const isT = (c: string) => c === "T" || c === "t" || c === "P" || c === "p";
+  const isT = (c: string) => c === "T" || c === "t" || c === "P" || c === "p" || c === "ST";
   const seen = new Set<string>();
   const tGroups: [number, number][][] = [];
   for (let r = 0; r < height; r++) {
@@ -210,7 +212,8 @@ export function diagramToBoard(codes: string[][]): DiagramResult {
   const upper = new Map<string, [number, number][]>();
   codes.forEach((row, r) =>
     row.forEach((c, x) => {
-      if (/^[IJLOSZ]$/.test(c)) upper.set(c, [...(upper.get(c) ?? []), [x, yOf(r)]]);
+      const k = c.replace(/^S(?=[IJLOSZ]$)/, "");
+      if (/^[IJLOSZ]$/.test(k)) upper.set(k, [...(upper.get(k) ?? []), [x, yOf(r)]]);
     }),
   );
   return { ok: true, board: { rows, tGroups, upper } };

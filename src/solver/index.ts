@@ -3,7 +3,7 @@ import { isTstKick, kicksFor } from "../engine/kicks";
 import { detectTSpin } from "../engine/movement";
 import { SHAPES, pieceCells, rotateBy, spawnPos } from "../engine/pieces";
 import type { PiecePos, PieceType, Rotation, SpinKind } from "../engine/types";
-import { GOALS, type GoalId } from "../modes/goals";
+import { GOALS, type Goal, type GoalId, type GoalLock } from "../modes/goals";
 import { posToPlacement, type Placement } from "../modes/packs";
 
 /**
@@ -184,8 +184,8 @@ export interface SolveResult {
  * total (keeps hint lookups fast in the UI).
  */
 export function solve(input: SolveInput, maxNodes = 200_000): SolveResult {
-  const goal = GOALS[input.goal];
-  const need = (goal as { requiresPiece?: PieceType }).requiresPiece;
+  const goal: Goal = GOALS[input.goal];
+  const need = goal.requiresPiece;
   // A state that failed with `d` pieces left to use also fails with fewer.
   const failedAtDepth = new Map<string, number>();
   let nodes = 0;
@@ -224,8 +224,8 @@ export function solve(input: SolveInput, maxNodes = 200_000): SolveResult {
         next.place(r.pos);
         const lines = next.clearLines().length;
         const step: SolutionStep = { placement: posToPlacement(r.pos, isRotation(r.path.at(-1))), hold: c.useHold, path: r.path };
-        const lock = { lines, spin: r.spin, tst: r.spin === "full" && lines === 3, perfectClear: lines > 0 && next.isEmpty() };
-        if (goal.isMet(lock as never)) return [step];
+        const lock: GoalLock = { piece: c.piece, lines, spin: r.spin, tst: r.spin === "full" && lines === 3, perfectClear: lines > 0 && next.isEmpty() };
+        if (goal.isMet(lock)) return [step];
         if (stackTooHigh(next)) continue;
         const rest = dfs(next, c.rest, c.hold, depth - 1);
         if (rest) return [step, ...rest];
